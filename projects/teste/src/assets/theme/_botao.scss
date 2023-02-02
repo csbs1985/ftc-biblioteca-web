@@ -1,14 +1,3 @@
-.botao-icone {
-  width: 36px;
-  height: 35px;
-  border: none;
-  border-radius: 8px;
-
-  &__retencao {
-    background-color: var(--cor-primaria);
-  }
-}
-
 .botao {
   cursor: pointer;
   display: flex;
@@ -17,18 +6,20 @@
   border: none;
   border-radius: 8px;
   height: var(--tamanho-botao);
+  font-size: 1rem;
+  padding: 0 var(--espaco-medio);
 
   &:hover {
-    box-shadow: var(--sombra-botao);
-  }
-
-  &:active {
     opacity: 0.9;
   }
 
+  &:active {
+    box-shadow: inset var(--sombra-botao);
+  }
+
   &__icone {
-    width: 36px;
-    height: 36px;
+    width: var(--tamanho-botao-icone);
+    height: var(--tamanho-botao-icone);
     background: var(--cor-elemento) center no-repeat;
   }
 
@@ -40,5 +31,24 @@
     color: var(--cor-texto-selo);
     font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  &__principal {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-botao);
+  }
+
+  &__padrao {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+  }
+
+  &__pequeno {
+    height: var(--tamanho-botao-pequeno);
+  }
+
+  &__cheio {
+    width: 100%;
   }
 }
