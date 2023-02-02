@@ -1,9 +1,5 @@
 <section class="ftc-cabecalho">
-  <ftc-logo
-    [tipo]="aplicativoAtual"
-    [link]="'https://mail.google.com/mail/u/0/?hl=pt-br#inbox'"
-    [blank]="true"
-  ></ftc-logo>
+  <ftc-logo [tipo]="aplicativoAtual"></ftc-logo>
 
   <div class="ftc-cabecalho__menu">
     <div class="ftc-operador">
@@ -11,10 +7,14 @@
       <p class="texto">administrador</p>
     </div>
 
-    <ftc-botao-icone [icone]="BotaoIconeEnum.RETENCAO"></ftc-botao-icone>
+    <ftc-botao-selo></ftc-botao-selo>
 
     <ftc-botao-tema></ftc-botao-tema>
 
     <ftc-botao-sair></ftc-botao-sair>
   </div>
 </section>
+
+<div>
+  <ftc-botao [texto]="'texto do botão'"></ftc-botao>
+</div>

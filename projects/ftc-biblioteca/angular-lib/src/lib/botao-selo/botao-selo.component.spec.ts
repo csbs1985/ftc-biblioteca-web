@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BotaoIconeComponent } from './botao-icone.component';
+import { BotaoSeloComponent } from './botao-selo.component';
 
-describe('BotaoIconeComponent', () => {
-  let component: BotaoIconeComponent;
-  let fixture: ComponentFixture<BotaoIconeComponent>;
+describe('BotaoSeloComponent', () => {
+  let component: BotaoSeloComponent;
+  let fixture: ComponentFixture<BotaoSeloComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BotaoIconeComponent ]
+      declarations: [ BotaoSeloComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BotaoIconeComponent);
+    fixture = TestBed.createComponent(BotaoSeloComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'lib-botao',
+  selector: 'ftc-botao',
   templateUrl: './botao.component.html',
-  styleUrls: ['./botao.component.css']
+  styleUrls: ['./botao.component.scss'],
 })
 export class BotaoComponent implements OnInit {
+  @Input() texto: string = 'textoBotao';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

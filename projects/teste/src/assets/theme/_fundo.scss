@@ -1,0 +1,13 @@
+.fundo {
+  &--b2b {
+    background-color: var(--cor-b2b);
+  }
+
+  &--b2c {
+    background-color: var(--cor-b2c);
+  }
+
+  &--retencao {
+    background-color: var(--cor-retencao);
+  }
+}

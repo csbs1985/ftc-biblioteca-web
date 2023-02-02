@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BotaoIconeEnum } from '../botao-icone/botao-icone-enum';
 import { AplicativoEnum } from '../../enums/aplicativo.enum';
 import { IdentificarProjetoService } from '../../services/identificar-projeto.service';
 
@@ -19,9 +18,5 @@ export class CabecalhoComponent implements OnInit {
 
   private identificarProjeto() {
     this.aplicativoAtual = this.identificarProjetoService.identificar();
-  }
-
-  public get BotaoIconeEnum(): typeof BotaoIconeEnum {
-    return BotaoIconeEnum;
   }
 }
