@@ -1,0 +1,38 @@
+.botao-icone {
+  width: 36px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+
+  &__retencao {
+    background-color: var(--cor-primaria);
+  }
+}
+
+.botao {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  height: var(--tamanho-botao);
+
+  &:hover {
+    box-shadow: var(--sombra-botao);
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+
+  &__icone {
+    width: 36px;
+    height: 36px;
+    background: var(--cor-elemento) center no-repeat;
+  }
+
+  &__sair {
+    background: url("/assets/icons/sair.svg") var(--cor-sair) center no-repeat;
+  }
+}

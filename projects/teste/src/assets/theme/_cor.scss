@@ -1,0 +1,21 @@
+:root {
+  --cor-primaria: #00a7a7;
+
+  --cor-alerta: #f7a700;
+  --cor-erro: #d8467f;
+  --cor-sair: #d8467f;
+
+  --cor-borda: #e3e5ef;
+  --cor-elemento: #ececec;
+  --cor-fundo: #f9f9f9;
+  --cor-sombra: #1919197a;
+  --cor-texto: #4a4a4a;
+}
+
+:root .tema-escuro {
+  --cor-borda: #30363d;
+  --cor-elemento: #21262d;
+  --cor-fundo: #0d1117;
+  --cor-sombra: #ffffff7a;
+  --cor-texto: #ffffff;
+}

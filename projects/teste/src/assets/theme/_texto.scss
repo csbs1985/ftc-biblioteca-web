@@ -1,0 +1,7 @@
+.texto {
+  color: var(--cor-texto);
+
+  &--bold {
+    font-weight: bold;
+  }
+}
