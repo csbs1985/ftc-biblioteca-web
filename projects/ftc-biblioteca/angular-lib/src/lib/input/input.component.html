@@ -1,0 +1,11 @@
+<section>
+  <p class="rotulo" *ngIf="rotulo">{{ rotulo }}</p>
+
+  <input
+    #input
+    class="input"
+    type="text"
+    placeholder="{{ placeholder }}"
+    (input)="digitando(input.value)"
+  />
+</section>

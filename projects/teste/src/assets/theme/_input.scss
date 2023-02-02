@@ -1,0 +1,13 @@
+.input {
+  height: var(--tamanho-input);
+  background-color: var(--cor-elemento);
+  border: none;
+  border-radius: var(--borda-canto);
+  outline: none;
+  padding: 0 var(--espaco-pequeno);
+  color: var(--cor-texto);
+
+  &__cheio {
+    width: 100%;
+  }
+}

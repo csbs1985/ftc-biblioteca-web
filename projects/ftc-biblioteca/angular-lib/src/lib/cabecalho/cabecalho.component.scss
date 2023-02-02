@@ -6,7 +6,7 @@
   width: 100%;
   padding: 0 var(--espaco-grande);
   background-color: var(--cor-fundo);
-  border-bottom: 1px solid var(--cor-borda);
+  border-bottom: var(--borda);
 
   &__menu {
     height: inherit;

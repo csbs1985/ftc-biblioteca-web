@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { BotaoSairComponent } from './botao-sair/botao-sair.component';
 import { BotaoTemaComponent } from './botao-tema/botao-tema.component';
 import { BotaoSeloComponent } from './botao-selo/botao-selo.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +18,18 @@ import { BotaoSeloComponent } from './botao-selo/botao-selo.component';
     BotaoSairComponent,
     BotaoTemaComponent,
     BotaoSeloComponent,
+    InputComponent,
   ],
   imports: [CommonModule],
-  exports: [CabecalhoComponent],
+  exports: [
+    CabecalhoComponent,
+    BotaoComponent,
+    MenuComponent,
+    LogoComponent,
+    BotaoSairComponent,
+    BotaoTemaComponent,
+    BotaoSeloComponent,
+    InputComponent,
+  ],
 })
 export class AngularLibModule {}
