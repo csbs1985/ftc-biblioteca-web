@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BotaoComponent } from './botao.component';
+import { InputBotaoComponent } from './input-botao.component';
 
-describe('BotaoComponent', () => {
-  let component: BotaoComponent;
-  let fixture: ComponentFixture<BotaoComponent>;
+describe('InputBotaoComponent', () => {
+  let component: InputBotaoComponent;
+  let fixture: ComponentFixture<InputBotaoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BotaoComponent ]
+      declarations: [ InputBotaoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BotaoComponent);
+    fixture = TestBed.createComponent(InputBotaoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

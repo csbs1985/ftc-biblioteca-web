@@ -9,13 +9,13 @@ export class InputComponent implements OnInit {
   @Input() rotulo: string = '';
   @Input() type = ['text', 'number', 'email'];
 
-  @Output() textoInserido = new EventEmitter<string>();
+  @Output() inputEmitter = new EventEmitter<string>();
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  public digitando(event: any): void {
-    console.log(event);
+  public inputDigitando(event: any): void {
+    this.inputEmitter.emit(event);
   }
 }

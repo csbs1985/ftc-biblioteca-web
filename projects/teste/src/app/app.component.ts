@@ -10,4 +10,8 @@ export class AppComponent {
   constructor(private temaService: TemaService) {
     this.temaService.pegarTema();
   }
+
+  public inputBotaoEmitter(event: string) {
+    console.log(event);
+  }
 }

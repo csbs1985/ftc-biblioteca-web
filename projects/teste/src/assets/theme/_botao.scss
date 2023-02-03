@@ -44,11 +44,20 @@
     border: 1px solid var(--cor-principal);
   }
 
-  &__pequeno {
+  &--pequeno {
     height: var(--tamanho-botao-pequeno);
   }
 
-  &__cheio {
+  &--cheio {
     width: 100%;
+  }
+
+  &__borda-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: var(--espaco-minimo);
+    background-color: var(--cor-elemento);
+    border-radius: var(--borda-canto);
   }
 }

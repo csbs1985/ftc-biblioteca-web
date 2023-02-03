@@ -1,7 +1,15 @@
 <section>
   <ftc-cabecalho></ftc-cabecalho>
 
-  <ftc-botao [texto]="'texto do botão'"></ftc-botao>
+  <button class="botao botao__principal">texto do botão</button>
 
   <ftc-input [rotulo]="'Usuário'" [placeholder]="'usuário'"></ftc-input>
+
+  <ftc-input-botao
+    class="col-4"
+    [rotulo]="'Usuário'"
+    [placeholder]="'usuário'"
+    [botao]="'botão'"
+    (inputBotaoEmitter)="inputBotaoEmitter($event)"
+  ></ftc-input-botao>
 </section>
