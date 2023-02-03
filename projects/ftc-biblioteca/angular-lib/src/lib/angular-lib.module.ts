@@ -8,6 +8,8 @@ import { BotaoTemaComponent } from './botao-tema/botao-tema.component';
 import { BotaoSeloComponent } from './botao-selo/botao-selo.component';
 import { InputComponent } from './input/input.component';
 import { InputBotaoComponent } from './input-botao/input-botao.component';
+import { SelectInlineComponent } from './select-inline/select-inline.component';
+import { MultiselectInlineComponent } from './multiselect-inline/multiselect-inline.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { InputBotaoComponent } from './input-botao/input-botao.component';
     InputComponent,
     LogoComponent,
     MenuComponent,
+    MultiselectInlineComponent,
+    SelectInlineComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -30,6 +34,8 @@ import { InputBotaoComponent } from './input-botao/input-botao.component';
     InputComponent,
     LogoComponent,
     MenuComponent,
+    MultiselectInlineComponent,
+    SelectInlineComponent,
   ],
 })
 export class AngularLibModule {}
