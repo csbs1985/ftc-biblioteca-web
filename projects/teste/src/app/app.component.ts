@@ -1,3 +1,4 @@
+import { LogoEnum } from './../../../ftc-biblioteca/angular-lib/src/enums/logo.enum';
 import { Component } from '@angular/core';
 import { SelectInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/select.interfaces';
 import { TemaService } from 'projects/ftc-biblioteca/angular-lib/src/services/tema.service';
@@ -66,5 +67,9 @@ export class AppComponent {
 
   public selectInlineOutput(event: SelectInterface[]) {
     console.log(event);
+  }
+
+  public get LogoEnum(): typeof LogoEnum {
+    return LogoEnum;
   }
 }

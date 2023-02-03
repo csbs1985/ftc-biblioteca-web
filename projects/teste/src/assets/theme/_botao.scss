@@ -8,6 +8,8 @@
   height: var(--tamanho-botao);
   font-size: 1rem;
   padding: 0 var(--espaco-medio);
+  background-color: transparent;
+  color: var(--cor-principal);
 
   &:hover {
     opacity: 0.9;

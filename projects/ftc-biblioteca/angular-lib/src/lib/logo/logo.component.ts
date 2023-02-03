@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AplicativoEnum } from '../../enums/aplicativo.enum';
+import { LogoEnum } from '../../enums/logo.enum';
 
 const BASE_PATH = 'assets/icons';
 
@@ -11,7 +11,7 @@ const BASE_PATH = 'assets/icons';
 export class LogoComponent implements OnInit {
   public logoCaminho!: string;
 
-  @Input() tipo!: AplicativoEnum;
+  @Input() tipo!: LogoEnum;
   @Input() link!: string;
   @Input() blank: boolean = false;
 
@@ -29,7 +29,7 @@ export class LogoComponent implements OnInit {
     if (this.link) window.open(this.link, this.blank ? '_blank' : '_self');
   }
 
-  public get AplicativoEnum(): typeof AplicativoEnum {
-    return AplicativoEnum;
+  public get LogoEnum(): typeof LogoEnum {
+    return LogoEnum;
   }
 }
