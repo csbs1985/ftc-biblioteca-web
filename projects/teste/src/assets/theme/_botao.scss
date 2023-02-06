@@ -10,6 +10,7 @@
   padding: 0 var(--espaco-medio);
   background-color: transparent;
   color: var(--cor-principal);
+  text-transform: lowercase;
 
   &:hover {
     opacity: 0.9;

@@ -10,6 +10,7 @@ import { InputComponent } from './input/input.component';
 import { InputBotaoComponent } from './input-botao/input-botao.component';
 import { SelectInlineComponent } from './select-inline/select-inline.component';
 import { MultiselectInlineComponent } from './multiselect-inline/multiselect-inline.component';
+import { FormularioEntrarComponent } from './formulario-entrar/formulario-entrar.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MultiselectInlineComponent } from './multiselect-inline/multiselect-inl
     BotaoSeloComponent,
     BotaoTemaComponent,
     CabecalhoComponent,
+    FormularioEntrarComponent,
     InputBotaoComponent,
     InputComponent,
     LogoComponent,
@@ -30,6 +32,7 @@ import { MultiselectInlineComponent } from './multiselect-inline/multiselect-inl
     BotaoSeloComponent,
     BotaoTemaComponent,
     CabecalhoComponent,
+    FormularioEntrarComponent,
     InputBotaoComponent,
     InputComponent,
     LogoComponent,
