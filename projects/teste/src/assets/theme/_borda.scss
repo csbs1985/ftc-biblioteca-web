@@ -1,4 +1,8 @@
 :root {
-  --borda: 1px solid var(--cor-borda);
+  --borda: 0.5px solid var(--cor-borda);
   --borda-canto: 8px;
+}
+
+:root .tema-escuro {
+  --borda: 0.5px solid var(--cor-borda);
 }
