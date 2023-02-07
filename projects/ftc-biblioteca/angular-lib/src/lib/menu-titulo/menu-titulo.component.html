@@ -1,0 +1,14 @@
+<section class="ftc-menu-titulo">
+  <p class="texto__titulo">{{ titulo }}</p>
+
+  <div *ngIf="menu">
+    <button
+      *ngFor="let item of menu"
+      class="ftc-menu-titulo__botao"
+      [class.ftc-menu-titulo__botao--selecionado]="item.selecionado"
+      (click)="menuTituloSelecionar(item)"
+    >
+      {{ item.fantasia }}
+    </button>
+  </div>
+</section>

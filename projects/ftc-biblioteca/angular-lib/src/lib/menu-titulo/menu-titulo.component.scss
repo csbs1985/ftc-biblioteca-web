@@ -1,0 +1,28 @@
+.ftc-menu-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--tamanho-menu-horizontal);
+  border-bottom: var(--borda);
+  padding-left: var(--espaco-medio);
+  // background-color: greenyellow;
+
+  p {
+    margin: 0;
+  }
+
+  &__botao {
+    cursor: pointer;
+    height: var(--tamanho-menu-horizontal);
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0 var(--espaco-medio);
+
+    &--selecionado {
+      color: var(--cor-principal);
+      border-bottom-color: var(--cor-principal);
+    }
+  }
+}

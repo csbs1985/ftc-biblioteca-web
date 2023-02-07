@@ -1,19 +1,10 @@
 :root {
-  --tamanho-1: 0px;
-  --tamanho-1: 1px;
-  --tamanho-1: 4px;
-  --tamanho-1: 8px;
-  --tamanho-1: 16px;
-  --tamanho-1: 24px;
-  --tamanho-1: 32px;
-  --tamanho-1: 40px;
-  --tamanho-1: 48px;
-  --tamanho-1: 56px;
-  --tamanho-1: 64px;
+  // multiplos e divisor por 8 => 0,1,4,8,16,24,32,40,48,56,64
 
+  --tamanho-botao: 40px;
+  --tamanho-botao-icone: 36px;
+  --tamanho-botao-pequeno: 32px;
   --tamanho-cabecalho: 64px;
   --tamanho-input: 40px;
-  --tamanho-botao: 40px;
-  --tamanho-botao-pequeno: 32px;
-  --tamanho-botao-icone: 36px;
+  --tamanho-menu-horizontal: 48px;
 }

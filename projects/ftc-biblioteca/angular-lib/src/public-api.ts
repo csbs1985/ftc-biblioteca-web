@@ -20,6 +20,7 @@ export * from './lib/input/input.component';
 export * from './lib/input-botao/input-botao.component';
 export * from './lib/logo/logo.component';
 export * from './lib/menu/menu.component';
+export * from './lib/menu-titulo/menu-titulo.component';
 export * from './lib/select-inline/select-inline.component';
 export * from './lib/multiselect-inline/multiselect-inline.component';
 export * from './lib/formulario-entrar/formulario-entrar.component';
