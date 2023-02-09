@@ -139,6 +139,10 @@ export class AppComponent {
     console.log(event);
   }
 
+  public tabelaPaginacaoOutput(paginaSelecionada: number) {
+    console.log('pagina: ' + paginaSelecionada);
+  }
+
   public get LogoEnum(): typeof LogoEnum {
     return LogoEnum;
   }

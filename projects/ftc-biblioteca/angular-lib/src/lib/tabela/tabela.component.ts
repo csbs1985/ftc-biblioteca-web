@@ -13,6 +13,7 @@ export class TabelaComponent implements OnInit {
   @Input() tabelaInput!: TabelaInterface;
 
   @Output() tabelaOutput = new EventEmitter();
+  @Output() tabelaPaginacaoOutput = new EventEmitter();
 
   public selecionados: any[] = [];
   public paginacao!: PaginacaoInterface;
@@ -41,6 +42,6 @@ export class TabelaComponent implements OnInit {
   }
 
   public paginacaoOutput(paginaSelecionada: number) {
-    console.log('pagina: ' + paginaSelecionada);
+    this.tabelaPaginacaoOutput.emit(paginaSelecionada);
   }
 }
