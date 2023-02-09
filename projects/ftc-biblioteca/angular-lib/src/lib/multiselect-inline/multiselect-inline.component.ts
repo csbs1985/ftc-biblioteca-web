@@ -1,4 +1,4 @@
-import { SelectInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/select.interfaces';
+import { SelectInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/select.interface';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({

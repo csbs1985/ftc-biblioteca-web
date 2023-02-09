@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { SelectInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/select.interfaces';
+import { SelectInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/select.interface';
 
 @Component({
   selector: 'ftc-select-inline',

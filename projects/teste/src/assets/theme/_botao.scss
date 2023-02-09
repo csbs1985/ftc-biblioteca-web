@@ -6,7 +6,7 @@
   border: none;
   border-radius: var(--borda-canto);
   height: var(--tamanho-botao);
-  font-size: 1rem;
+  font-size: var(--fonte-tamanho-16);
   padding: 0 var(--espaco-medio);
   background-color: transparent;
   color: var(--cor-principal);
@@ -32,7 +32,7 @@
 
   &__selo {
     color: var(--cor-texto-selo);
-    font-size: 1.5rem;
+    font-size: var(--fonte-tamanho-24);
     font-weight: bold;
     text-transform: capitalize;
   }
@@ -54,12 +54,40 @@
   }
 
   &--desabilitado {
-    background-color: var(--cor-desabilitado);
+    background-color: transparent !important;
+    border-color: transparent !important;
     cursor: default;
   }
 
   &--pequeno {
     height: var(--tamanho-botao-pequeno);
+  }
+
+  &__paginacao {
+    width: var(--tamanho-botao-paginacao);
+    height: var(--tamanho-botao-paginacao);
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: var(--cor-fundo);
+    border-color: var(--cor-borda);
+    margin-right: var(--espaco-minimo);
+
+    p {
+      color: var(--cor-texto);
+      font-size: var(--fonte-tamanho-12);
+    }
+
+    &:hover {
+      background-color: var(--cor-hover);
+      border-color: var(--cor-hover);
+    }
+
+    &--selecionado {
+      background-color: var(--cor-principal);
+      p {
+        color: var(--cor-texto-botao);
+      }
+    }
   }
 
   &--cheio {

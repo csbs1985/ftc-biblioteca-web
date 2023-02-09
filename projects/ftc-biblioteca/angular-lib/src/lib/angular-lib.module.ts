@@ -12,6 +12,8 @@ import { SelectInlineComponent } from './select-inline/select-inline.component';
 import { MultiselectInlineComponent } from './multiselect-inline/multiselect-inline.component';
 import { FormularioEntrarComponent } from './formulario-entrar/formulario-entrar.component';
 import { MenuTituloComponent } from './menu-titulo/menu-titulo.component';
+import { TabelaComponent } from './tabela/tabela.component';
+import { PaginacaoComponent } from './paginacao/paginacao.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { MenuTituloComponent } from './menu-titulo/menu-titulo.component';
     MenuComponent,
     MenuTituloComponent,
     MultiselectInlineComponent,
+    PaginacaoComponent,
     SelectInlineComponent,
+    TabelaComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -41,7 +45,9 @@ import { MenuTituloComponent } from './menu-titulo/menu-titulo.component';
     MenuComponent,
     MenuTituloComponent,
     MultiselectInlineComponent,
+    PaginacaoComponent,
     SelectInlineComponent,
+    TabelaComponent,
   ],
 })
 export class AngularLibModule {}

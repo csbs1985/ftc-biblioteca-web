@@ -1,0 +1,7 @@
+.margin {
+  &-right {
+    &--minimo {
+      margin-right: var(--espaco-minimo);
+    }
+  }
+}

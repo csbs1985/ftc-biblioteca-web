@@ -3,19 +3,20 @@
 
   &__titulo {
     text-transform: lowercase;
-    font-size: 1.75rem;
+    font-size: var(--fonte-tamanho-28);
     margin-bottom: var(--espaco-medio);
   }
 
   &__rotulo {
+    text-align: left;
     text-transform: lowercase;
-    font-size: 0.875rem;
+    font-size: var(--fonte-tamanho-14);
     margin-bottom: var(--espaco-pequeno);
     color: var(--cor-principal);
   }
 
   &__info {
-    font-size: 0.625rem;
+    font-size: var(--fonte-tamanho-12);
     font-weight: lighter;
   }
 

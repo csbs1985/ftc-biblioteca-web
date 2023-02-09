@@ -2,3 +2,33 @@
   font-family: "ubuntu-regular";
   src: url("/assets/fonts/ubuntu-regular.ttf") format("truetype");
 }
+
+:root {
+  --fonte-tamanho-10: 0.625rem;
+  --fonte-tamanho-12: 0.75rem;
+  --fonte-tamanho-14: 0.875rem;
+  --fonte-tamanho-16: 1rem;
+  --fonte-tamanho-24: 1.5rem;
+  --fonte-tamanho-28: 1.75rem;
+}
+
+.fonte {
+  &-tamanho--10 {
+    font-size: var(--fonte-tamanho-10);
+  }
+  &-tamanho--12 {
+    font-size: var(--fonte-tamanho-12);
+  }
+  &-tamanho--14 {
+    font-size: var(--fonte-tamanho-14);
+  }
+  &-tamanho--16 {
+    font-size: var(--fonte-tamanho-16);
+  }
+  &-tamanho--24 {
+    font-size: var(--fonte-tamanho-24);
+  }
+  &-tamanho--28 {
+    font-size: var(--fonte-tamanho-28);
+  }
+}

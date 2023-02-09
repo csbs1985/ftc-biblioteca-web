@@ -1,0 +1,54 @@
+<section class="ftc-paginacao">
+  <button
+    [disabled]="desabilitarPaginacaoAnterior"
+    class="botao botao__paginacao"
+    [class.botao--desabilitado]="desabilitarPaginacaoAnterior"
+    (click)="paginaAnterior()"
+  >
+    <img src="/assets/icons/seta-esquerda.svg" alt="página anterior" />
+  </button>
+
+  <button
+    class="botao botao__paginacao"
+    [class.botao__paginacao--selecionado]="paginacaoInput.paginaAtual === 1"
+    (click)="selecionarPagina(1)"
+  >
+    <p>1</p>
+  </button>
+
+  <p class="margin-right--minimo" *ngIf="mostrarPontosInicio">...</p>
+
+  <div *ngFor="let item of paginacaoInput.proximasPaginas">
+    <button
+      *ngIf="mostrarPaginacaoAnteriorProxima(item)"
+      class="botao botao__paginacao"
+      [class.botao__paginacao--selecionado]="
+        item === paginacaoInput.paginaAtual
+      "
+      (click)="selecionarPagina(item)"
+    >
+      <p>{{ item }}</p>
+    </button>
+  </div>
+
+  <p class="margin-right--minimo" *ngIf="mostrarPontosFinal">...</p>
+
+  <button
+    class="botao botao__paginacao"
+    [class.botao__paginacao--selecionado]="
+      paginacaoInput.ultimaPagina === paginacaoInput.paginaAtual
+    "
+    (click)="selecionarPagina(paginacaoInput.ultimaPagina)"
+  >
+    <p>{{ paginacaoInput.ultimaPagina }}</p>
+  </button>
+
+  <button
+    [disabled]="desabilitarProximaPaginacao"
+    class="botao botao__paginacao"
+    [class.botao--desabilitado]="desabilitarProximaPaginacao"
+    (click)="proximaPagina()"
+  >
+    <img src="/assets/icons/seta-direita.svg" alt="proxima página" />
+  </button>
+</section>

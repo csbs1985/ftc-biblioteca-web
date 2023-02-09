@@ -1,0 +1,37 @@
+<section class="ftc-tabela">
+  <p *ngIf="tabelaInput.rotulo" class="texto__rotulo">
+    {{ tabelaInput.rotulo }}
+  </p>
+
+  <table>
+    <tr>
+      <th *ngFor="let item of tabelaInput.titulo">{{ item }}</th>
+    </tr>
+
+    <tr
+      class="ftc-tabela__conteudo"
+      *ngFor="let linha of tabelaInput.conteudo"
+      [class.ftc-tabela__conteudo--selecionado]="
+        tabelaItemSelecionado(linha.id)
+      "
+      (click)="tabelaSelecionar(linha)"
+    >
+      <td *ngFor="let coluna of tabelaInput.titulo">
+        {{ linha[coluna] || "-" }}
+      </td>
+    </tr>
+  </table>
+
+  <div class="ftc-tabela__rodape">
+    <p>
+      mostrando de {{ paginacao.mostrandoDe }} à {{ paginacao.mostrandoAte }} de
+      {{ paginacao.totalConteudo }}
+      {{ paginacao.totalConteudo === 1 ? "item" : "itens" }}
+    </p>
+
+    <ftc-paginacao
+      [paginacaoInput]="paginacao"
+      (paginacaoOutput)="paginacaoOutput($event)"
+    ></ftc-paginacao>
+  </div>
+</section>

@@ -1,5 +1,6 @@
 @import "./resete";
 
+@import "./fonte"; // não precisa importar
 @import "./borda";
 @import "./botao";
 @import "./cartao";
@@ -7,9 +8,9 @@
 @import "./cor";
 @import "./espaco";
 @import "./flex";
-@import "./fonte"; // não precisa importar
 @import "./fundo";
 @import "./input";
+@import "./margin";
 @import "./select";
 @import "./sombra";
 @import "./tamanho";
