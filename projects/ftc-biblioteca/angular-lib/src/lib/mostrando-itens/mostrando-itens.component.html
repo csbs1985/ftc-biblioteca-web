@@ -1,6 +1,15 @@
-<p class="ftc-mostrando-itens">
-  mostrando de {{ mostrandoItensInput.mostrandoDe }} à
-  {{ mostrandoItensInput.mostrandoAte }} de
-  {{ mostrandoItensInput.totalConteudo }}
-  {{ mostrandoItensInput.totalConteudo === 1 ? "item" : "itens" }}
-</p>
+<section class="ftc-mostrando-itens">
+  <p>
+    mostrando de {{ mostrandoItensInput.mostrandoDe }} à
+    {{ mostrandoItensInput.mostrandoAte }} de
+    {{ mostrandoItensInput.totalConteudo }}
+    {{ mostrandoItensInput.totalConteudo === 1 ? "item" : "itens" }}
+  </p>
+
+  <p *ngIf="itensSelecionadosInput > 0">
+    &nbsp; - {{ itensSelecionadosInput }}
+    {{
+      itensSelecionadosInput === 1 ? "item selecuionado" : "itens selecionados"
+    }}
+  </p>
+</section>

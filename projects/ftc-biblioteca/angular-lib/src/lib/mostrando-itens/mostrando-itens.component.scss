@@ -1,3 +1,7 @@
 .ftc-mostrando-itens {
-  font-size: var(--fonte-tamanho-14);
+  display: flex;
+
+  p {
+    font-size: var(--fonte-tamanho-14);
+  }
 }

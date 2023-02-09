@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MostrandoItensComponent implements OnInit {
   @Input() mostrandoItensInput!: PaginacaoInterface;
+  @Input() itensSelecionadosInput: number = 0;
 
   constructor() {}
 
