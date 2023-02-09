@@ -14,6 +14,7 @@ import { FormularioEntrarComponent } from './formulario-entrar/formulario-entrar
 import { MenuTituloComponent } from './menu-titulo/menu-titulo.component';
 import { TabelaComponent } from './tabela/tabela.component';
 import { PaginacaoComponent } from './paginacao/paginacao.component';
+import { MostrandoItensComponent } from './mostrando-itens/mostrando-itens.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PaginacaoComponent } from './paginacao/paginacao.component';
     LogoComponent,
     MenuComponent,
     MenuTituloComponent,
+    MostrandoItensComponent,
     MultiselectInlineComponent,
     PaginacaoComponent,
     SelectInlineComponent,
@@ -44,6 +46,7 @@ import { PaginacaoComponent } from './paginacao/paginacao.component';
     LogoComponent,
     MenuComponent,
     MenuTituloComponent,
+    MostrandoItensComponent,
     MultiselectInlineComponent,
     PaginacaoComponent,
     SelectInlineComponent,

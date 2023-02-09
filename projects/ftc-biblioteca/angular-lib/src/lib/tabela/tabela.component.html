@@ -23,11 +23,9 @@
   </table>
 
   <div class="ftc-tabela__rodape">
-    <p>
-      mostrando de {{ paginacao.mostrandoDe }} à {{ paginacao.mostrandoAte }} de
-      {{ paginacao.totalConteudo }}
-      {{ paginacao.totalConteudo === 1 ? "item" : "itens" }}
-    </p>
+    <ftc-mostrando-itens
+      [mostrandoItensInput]="paginacao"
+    ></ftc-mostrando-itens>
 
     <ftc-paginacao
       [paginacaoInput]="paginacao"
