@@ -1,0 +1,31 @@
+<section class="ftc-select-subselect">
+  <div>
+    <p class="texto__rotulo">selecionar motivo</p>
+
+    <ul class="ftc-select-subselect__menu">
+      <li
+        *ngFor="let item of selectSubselectInput"
+        class="select__botao"
+        [class.select__botao--selecionado]="selectSelecionado === item.select"
+        (click)="selecionarSelect(item)"
+      >
+        {{ item.select }}
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="subselect.length > 0">
+    <p class="texto__rotulo">selecionar submotivo</p>
+
+    <ul class="ftc-select-subselect__menu">
+      <li
+        *ngFor="let item of subselect"
+        class="select__botao"
+        [class.select__botao--selecionado]="subselectSelecinado === item"
+        (click)="selecionarSubselect(item)"
+      >
+        {{ item.texto }}
+      </li>
+    </ul>
+  </div>
+</section>

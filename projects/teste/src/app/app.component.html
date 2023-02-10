@@ -1,5 +1,8 @@
 <ftc-cabecalho></ftc-cabecalho>
 
-<br />
-
-<ftc-placa [placaInput]="placa" (placaOutput)="placaOutput($event)"></ftc-placa>
+<div>
+  <ftc-select-subselect
+    [selectSubselectInput]="selectSubselect"
+    (selectSubselectOutput)="selectSubselectOutput($event)"
+  ></ftc-select-subselect>
+</div>

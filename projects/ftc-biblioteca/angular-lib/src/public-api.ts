@@ -29,5 +29,6 @@ export * from './lib/mostrando-itens/mostrando-itens.component';
 export * from './lib/multiselect-inline/multiselect-inline.component';
 export * from './lib/paginacao/paginacao.component';
 export * from './lib/select-inline/select-inline.component';
+export * from './lib/select-subselect/select-subselect.component';
 export * from './lib/tabela/tabela.component';
 export * from './lib/placa/placa.component';

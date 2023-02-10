@@ -16,6 +16,7 @@ import { TabelaComponent } from './tabela/tabela.component';
 import { PaginacaoComponent } from './paginacao/paginacao.component';
 import { MostrandoItensComponent } from './mostrando-itens/mostrando-itens.component';
 import { PlacaComponent } from './placa/placa.component';
+import { SelectSubselectComponent } from './select-subselect/select-subselect.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PlacaComponent } from './placa/placa.component';
     PaginacaoComponent,
     PlacaComponent,
     SelectInlineComponent,
+    SelectSubselectComponent,
     TabelaComponent,
   ],
   imports: [CommonModule],
@@ -53,6 +55,7 @@ import { PlacaComponent } from './placa/placa.component';
     PaginacaoComponent,
     PlacaComponent,
     SelectInlineComponent,
+    SelectSubselectComponent,
     TabelaComponent,
   ],
 })

@@ -12,6 +12,114 @@ import { PlacaInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfac
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  public selectSubselect = [
+    {
+      select: 'concorrencia',
+      subselect: [
+        {
+          texto: 'cliente paraná',
+          valor: 1,
+        },
+        {
+          texto: 'não quis compartilhar o motivo',
+          valor: 2,
+        },
+        {
+          texto: 'roubo',
+          valor: 3,
+        },
+        {
+          texto: 'troca de titularidade',
+          valor: 4,
+        },
+      ],
+    },
+    {
+      select: 'financeiro',
+      subselect: [
+        {
+          texto: 'cliente paraná',
+          valor: 1,
+        },
+        {
+          texto: 'não quis compartilhar o motivo',
+          valor: 2,
+        },
+        {
+          texto: 'roubo',
+          valor: 3,
+        },
+        {
+          texto: 'troca de titularidade',
+          valor: 4,
+        },
+      ],
+    },
+    {
+      select: 'motivos pontuais',
+      subselect: [
+        {
+          texto: 'cliente paraná',
+          valor: 1,
+        },
+        {
+          texto: 'não quis compartilhar o motivo',
+          valor: 2,
+        },
+        {
+          texto: 'roubo',
+          valor: 3,
+        },
+        {
+          texto: 'troca de titularidade',
+          valor: 4,
+        },
+      ],
+    },
+    {
+      select: 'problemas operacionais',
+      subselect: [
+        {
+          texto: 'cliente paraná',
+          valor: 1,
+        },
+        {
+          texto: 'não quis compartilhar o motivo',
+          valor: 2,
+        },
+        {
+          texto: 'roubo',
+          valor: 3,
+        },
+        {
+          texto: 'troca de titularidade',
+          valor: 4,
+        },
+      ],
+    },
+    {
+      select: 'venda do veìculo',
+      subselect: [
+        {
+          texto: 'cliente paraná',
+          valor: 1,
+        },
+        {
+          texto: 'não quis compartilhar o motivo',
+          valor: 2,
+        },
+        {
+          texto: 'roubo',
+          valor: 3,
+        },
+        {
+          texto: 'troca de titularidade',
+          valor: 4,
+        },
+      ],
+    },
+  ];
+
   public placa: PlacaInterface = {
     modelo: 't4',
     montadora: 'troller',
@@ -86,50 +194,50 @@ export class AppComponent {
   public conteudo: SelectInterface[] = [
     {
       valor: 'month',
-      fantasia: 'Mensual',
+      texto: 'Mensual',
       selecionado: true,
       desabilitado: false,
     },
     {
       valor: 'week',
-      fantasia: 'Semanal',
+      texto: 'Semanal',
       selecionado: false,
       desabilitado: false,
     },
     {
       valor: 'day',
-      fantasia: 'Diario',
+      texto: 'Diario',
       selecionado: false,
       desabilitado: false,
     },
     // {
     //   valor: 'h4',
-    //   fantasia: '4 Horas',
+    //   texto: '4 Horas',
     //   selecionado: true,
     //   desabilitado: false,
     // },
-    // { valor: 'h1', fantasia: '1 Hora', selecionado: false, desabilitado: true },
+    // { valor: 'h1', texto: '1 Hora', selecionado: false, desabilitado: true },
     // {
     //   valor: 'm30',
-    //   fantasia: '30 Minutos',
+    //   texto: '30 Minutos',
     //   selecionado: false,
     //   desabilitado: false,
     // },
     // {
     //   valor: 'm15',
-    //   fantasia: '15 Minutos',
+    //   texto: '15 Minutos',
     //   selecionado: false,
     //   desabilitado: false,
     // },
     // {
     //   valor: 'm5',
-    //   fantasia: '5 Minutos',
+    //   texto: '5 Minutos',
     //   selecionado: false,
     //   desabilitado: false,
     // },
     // {
     //   valor: 'm1',
-    //   fantasia: '1 Minuto',
+    //   texto: '1 Minuto',
     //   selecionado: false,
     //   desabilitado: false,
     // },
@@ -153,6 +261,10 @@ export class AppComponent {
 
   public placaOutput(placa: PlacaInterface): void {
     console.log(placa);
+  }
+
+  public selectSubselectOutput(select: any) {
+    console.log(select);
   }
 
   public get LogoEnum(): typeof LogoEnum {

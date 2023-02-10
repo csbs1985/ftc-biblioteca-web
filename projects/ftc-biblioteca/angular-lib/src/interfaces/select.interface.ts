@@ -1,6 +1,6 @@
 export interface SelectInterface {
   valor: string | number;
-  fantasia: string;
+  texto: string;
   selecionado?: boolean;
   desabilitado: boolean;
 }

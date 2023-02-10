@@ -11,4 +11,24 @@
     padding: var(--espaco-minimo);
     gap: var(--espaco-pequeno);
   }
+
+  &__botao {
+    display: flex;
+    align-items: center;
+    height: var(--tamanho-botao-pequeno);
+    border-radius: var(--borda-canto);
+    padding: 0 var(--espaco-pequeno);
+    vertical-align: middle;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--cor-hover);
+      color: var(--cor-texto-selecionado);
+    }
+
+    &--selecionado {
+      background-color: var(--cor-principal);
+      color: var(--cor-texto-selo);
+    }
+  }
 }
