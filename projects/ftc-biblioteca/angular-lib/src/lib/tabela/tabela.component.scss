@@ -30,13 +30,13 @@
   }
 
   &__conteudo {
-    &:last-of-type {
-      border: none;
-    }
-
     &:hover {
-      background-color: var(--cor-hover);
       cursor: pointer;
+      background-color: var(--cor-hover);
+
+      td {
+        color: var(--cor-texto-hover);
+      }
     }
 
     td {
@@ -47,7 +47,7 @@
       background-color: var(--cor-principal);
 
       td {
-        color: var(--cor-texto-botao);
+        color: var(--cor-texto-selecionado);
       }
     }
   }

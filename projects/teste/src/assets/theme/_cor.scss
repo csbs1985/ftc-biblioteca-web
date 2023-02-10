@@ -17,9 +17,13 @@
   --cor-elemento: #ececec;
   --cor-fundo: #f9f9f9;
   --cor-sombra: #1919197a;
+  --cor-tabela-inversa: #f0f0f0;
   --cor-texto: #4a4a4a;
-  --cor-texto-botao: #ffffff;
+
+  --cor-tabela-texto: #ffffff;
   --cor-texto-selo: #ffffff;
+  --cor-texto-hover: #0d1117;
+  --cor-texto-selecionado: #ffffff;
 }
 
 :root .tema-escuro {
@@ -29,5 +33,6 @@
   --cor-elemento: #21262d;
   --cor-fundo: #0d1117;
   --cor-sombra: #ffffff7a;
+  --cor-tabela-inversa: #30363d;
   --cor-texto: #c9d1d9;
 }
