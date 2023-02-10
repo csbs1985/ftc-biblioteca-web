@@ -15,6 +15,7 @@ import { MenuTituloComponent } from './menu-titulo/menu-titulo.component';
 import { TabelaComponent } from './tabela/tabela.component';
 import { PaginacaoComponent } from './paginacao/paginacao.component';
 import { MostrandoItensComponent } from './mostrando-itens/mostrando-itens.component';
+import { PlacaComponent } from './placa/placa.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MostrandoItensComponent } from './mostrando-itens/mostrando-itens.compo
     MostrandoItensComponent,
     MultiselectInlineComponent,
     PaginacaoComponent,
+    PlacaComponent,
     SelectInlineComponent,
     TabelaComponent,
   ],
@@ -49,6 +51,7 @@ import { MostrandoItensComponent } from './mostrando-itens/mostrando-itens.compo
     MostrandoItensComponent,
     MultiselectInlineComponent,
     PaginacaoComponent,
+    PlacaComponent,
     SelectInlineComponent,
     TabelaComponent,
   ],

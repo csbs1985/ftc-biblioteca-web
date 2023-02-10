@@ -1,0 +1,11 @@
+<section
+  class="ftc-placa"
+  [class.ftc-placa--selecionado]="placaSelecionada"
+  (click)="selecionarPlaca()"
+>
+  <div class="ftc-placa__azul">
+    {{ placaInput.montadora }} - {{ placaInput.modelo }}
+  </div>
+
+  <div class="ftc-placa__valor">{{ placaInput.placa }}</div>
+</section>

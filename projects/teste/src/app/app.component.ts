@@ -1,8 +1,10 @@
-import { LogoEnum } from './../../../ftc-biblioteca/angular-lib/src/enums/logo.enum';
 import { Component } from '@angular/core';
+
+import { LogoEnum } from 'projects/ftc-biblioteca/angular-lib/src/enums/logo.enum';
 import { SelectInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/select.interface';
 import { TemaService } from 'projects/ftc-biblioteca/angular-lib/src/services/tema.service';
 import { TabelaInterface } from 'projects/ftc-biblioteca/angular-lib/src/public-api';
+import { PlacaInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/placa.interface';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +12,13 @@ import { TabelaInterface } from 'projects/ftc-biblioteca/angular-lib/src/public-
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  tabela: TabelaInterface = {
+  public placa: PlacaInterface = {
+    modelo: 't4',
+    montadora: 'troller',
+    placa: 'gdh8b85',
+  };
+
+  public tabela: TabelaInterface = {
     rotulo: 'rotulo da tabela',
     paginacao: {
       mostrandoAte: 4,
@@ -75,7 +83,7 @@ export class AppComponent {
     ],
   };
 
-  conteudo: SelectInterface[] = [
+  public conteudo: SelectInterface[] = [
     {
       valor: 'month',
       fantasia: 'Mensual',
@@ -141,6 +149,10 @@ export class AppComponent {
 
   public tabelaPaginacaoOutput(paginaSelecionada: number) {
     console.log('pagina: ' + paginaSelecionada);
+  }
+
+  public placaOutput(placa: PlacaInterface): void {
+    console.log(placa);
   }
 
   public get LogoEnum(): typeof LogoEnum {

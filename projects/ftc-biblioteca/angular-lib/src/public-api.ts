@@ -5,6 +5,7 @@ import { FormularioEntrarComponent } from './lib/formulario-entrar/formulario-en
 
 export * from './interfaces/select.interface';
 export * from './interfaces/paginacao.interface';
+export * from './interfaces/placa.interface';
 export * from './interfaces/tabela.interface';
 
 export * from './services/tema.service';
@@ -29,3 +30,4 @@ export * from './lib/multiselect-inline/multiselect-inline.component';
 export * from './lib/paginacao/paginacao.component';
 export * from './lib/select-inline/select-inline.component';
 export * from './lib/tabela/tabela.component';
+export * from './lib/placa/placa.component';

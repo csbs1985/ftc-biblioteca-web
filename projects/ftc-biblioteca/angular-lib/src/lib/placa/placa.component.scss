@@ -1,0 +1,46 @@
+.ftc-placa {
+  width: 230px;
+  background-color: var(--cor-fundo);
+  border: 4px solid var(--cor-texto);
+  border-radius: var(--borda-canto);
+
+  * {
+    font-family: "gl-nummernschild-eng", "Helvetica Neue", sans-serif;
+  }
+
+  &__azul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    font-weight: lighter;
+    background-color: var(--cor-placa);
+    border-radius: 4px 4px 0 0;
+    color: var(--cor-texto-selo);
+  }
+
+  &__valor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    font-size: var(--fonte-tamanho-60);
+  }
+
+  &--selecionado {
+    border-color: var(--cor-principal);
+
+    .ftc-placa__valor {
+      color: var(--cor-principal);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-color: var(--cor-hover);
+
+    .ftc-placa__valor {
+      color: var(--cor-hover);
+    }
+  }
+}
