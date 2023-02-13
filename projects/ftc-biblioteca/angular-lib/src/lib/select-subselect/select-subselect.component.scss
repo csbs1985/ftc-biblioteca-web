@@ -1,14 +1,14 @@
 .ftc-select-subselect {
   display: flex;
   justify-content: flex-start;
-  gap: var(--espaco-medio);
+  gap: var(--size-medio);
 
   &__menu {
     display: flex;
     flex-direction: column;
-    gap: var(--espaco-s);
+    gap: var(--size-s);
     background-color: var(--color-element);
     border-radius: var(--border-radius);
-    padding: var(--espaco-s);
+    padding: var(--size-s);
   }
 }

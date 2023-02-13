@@ -20,7 +20,7 @@
 
     th,
     td {
-      padding: 0 var(--espaco-s);
+      padding: 0 var(--size-s);
       text-align: left;
       vertical-align: middle;
       font-size: var(--fonte-size-14);
@@ -56,7 +56,7 @@
     height: var(--size-table-line);
     background-color: var(--color-element);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
-    padding: 0 var(--espaco-s);
+    padding: 0 var(--size-s);
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -8,8 +8,8 @@
     background-color: var(--color-element);
     height: var(--size-input);
     border-radius: var(--border-radius);
-    padding: var(--espaco-minimo);
-    gap: var(--espaco-s);
+    padding: var(--size-xxs);
+    gap: var(--size-s);
   }
 
   &__botao {
@@ -17,7 +17,7 @@
     align-items: center;
     height: var(--size-btn-s);
     border-radius: var(--border-radius);
-    padding: 0 var(--espaco-s);
+    padding: 0 var(--size-s);
     vertical-align: middle;
 
     &:hover {

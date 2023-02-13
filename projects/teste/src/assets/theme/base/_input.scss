@@ -6,10 +6,10 @@
   box-sizing: border-box;
   border-radius: var(--border-radius);
   outline: none;
-  padding: 0 var(--espaco-s);
+  padding: 0 var(--size-s);
   color: var(--color-text);
 
-  &--cheio {
+  &--full {
     width: 100%;
   }
 }

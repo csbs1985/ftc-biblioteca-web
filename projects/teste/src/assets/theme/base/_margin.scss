@@ -1,0 +1,7 @@
+.margin {
+  &-r {
+    &-xs {
+      margin-right: var(--size-xs);
+    }
+  }
+}

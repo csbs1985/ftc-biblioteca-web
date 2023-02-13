@@ -7,27 +7,24 @@
 @import "./settings/color";
 @import "./settings/font";
 @import "./settings/size";
+@import "./settings/box-shadow";
 
 // tools
 @import "./tools/font";
 
 // base
+@import "./base/bg";
+@import "./base/border";
+@import "./base/button";
 @import "./base/font";
+@import "./base/h";
+@import "./base/input";
+@import "./base/select";
+@import "./base/margin";
 @import "./base/width";
 
 // components
+@import "./components/card";
+@import "./components/flex";
 @import "./components/text";
-
-@import "./cartao";
-@import "./col";
-@import "./espaco";
-@import "./flex";
-@import "./fundo";
-@import "./input";
-@import "./margin";
-@import "./select";
-@import "./sombra";
-
-@import "./border";
-@import "./button";
-@import "./h";
+@import "./components/col";

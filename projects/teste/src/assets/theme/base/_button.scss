@@ -7,7 +7,7 @@ button {
   border-radius: var(--border-radius);
   height: var(--size-btn);
   font-size: var(--fonte-size-16);
-  padding: 0 var(--espaco-medio);
+  padding: 0 var(--size-medio);
   background-color: transparent;
   color: var(--color-primary);
   text-transform: lowercase;
@@ -19,7 +19,7 @@ button {
   }
 
   &:active {
-    box-shadow: inset var(--sombra-radius);
+    box-shadow: inset var(--box-shadow);
   }
 
   &__icon {
@@ -73,7 +73,7 @@ button {
     border: 1px solid transparent;
     background-color: var(--color-bg);
     border-color: var(--color-border);
-    margin-right: var(--espaco-minimo);
+    margin-right: var(--size-minimo);
 
     p {
       color: var(--color-text);
@@ -101,7 +101,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: var(--espaco-minimo);
+    padding-right: var(--size-minimo);
     background-color: var(--color-element);
     border-radius: var(--border-radius);
   }
