@@ -1,13 +1,13 @@
 .input {
   width: 100%;
-  height: var(--tamanho-input);
-  background-color: var(--cor-elemento);
+  height: var(--size-input);
+  background-color: var(--color-element);
   border: none;
   box-sizing: border-box;
   border-radius: var(--border-radius);
   outline: none;
-  padding: 0 var(--espaco-pequeno);
-  color: var(--cor-texto);
+  padding: 0 var(--espaco-s);
+  color: var(--color-text);
 
   &--cheio {
     width: 100%;

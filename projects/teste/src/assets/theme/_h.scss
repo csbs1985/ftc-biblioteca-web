@@ -3,7 +3,7 @@ h1 {
 
 h2 {
   text-transform: lowercase;
-  font-size: var(--fonte-tamanho-28);
+  font-size: var(--fonte-size-28);
   font-weight: normal;
   margin-bottom: var(--espaco-medio);
 }
@@ -15,14 +15,14 @@ h4 {
 h5 {
   text-align: left;
   text-transform: lowercase;
-  font-size: var(--fonte-tamanho-14);
+  font-size: var(--fonte-size-14);
   font-weight: lighter;
-  margin-bottom: var(--espaco-pequeno);
-  color: var(--cor-principal);
+  margin-bottom: var(--espaco-s);
+  color: var(--color-primary);
 }
 
 h6 {
   text-transform: lowercase;
-  font-size: var(--fonte-tamanho-12);
+  font-size: var(--fonte-size-12);
   font-weight: lighter;
 }

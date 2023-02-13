@@ -6,9 +6,9 @@
   &__menu {
     display: flex;
     flex-direction: column;
-    gap: var(--espaco-pequeno);
-    background-color: var(--cor-elemento);
+    gap: var(--espaco-s);
+    background-color: var(--color-element);
     border-radius: var(--border-radius);
-    padding: var(--espaco-pequeno);
+    padding: var(--espaco-s);
   }
 }

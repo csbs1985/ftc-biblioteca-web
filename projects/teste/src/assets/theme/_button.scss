@@ -5,11 +5,11 @@ button {
   align-items: center;
   border: none;
   border-radius: var(--border-radius);
-  height: var(--tamanho-radius);
-  font-size: var(--fonte-tamanho-16);
+  height: var(--size-btn);
+  font-size: var(--fonte-size-16);
   padding: 0 var(--espaco-medio);
   background-color: transparent;
-  color: var(--cor-principal);
+  color: var(--color-primary);
   text-transform: lowercase;
 }
 
@@ -22,19 +22,20 @@ button {
     box-shadow: inset var(--sombra-radius);
   }
 
-  &__icone {
-    width: var(--tamanho-radius-icone);
-    height: var(--tamanho-radius-icone);
-    background: var(--cor-elemento) center no-repeat;
+  &__icon {
+    width: var(--size-btn-icon);
+    height: var(--size-btn-icon);
+    background: var(--color-element) center no-repeat;
   }
 
   &__sair {
-    background: url("/assets/icons/sair.svg") var(--cor-sair) center no-repeat;
+    background: url("/assets/icons/sair.svg") var(--color-logout) center
+      no-repeat;
   }
 
   &__selo {
-    color: var(--cor-texto-selo);
-    font-size: var(--fonte-tamanho-24);
+    color: var(--color-text-selo);
+    font-size: var(--fonte-size-24);
     font-weight: bold;
     text-transform: capitalize;
   }
@@ -43,16 +44,16 @@ button {
     background-color: transparent;
   }
 
-  &__principal,
+  &__primary,
   &--selecionado {
-    background-color: var(--cor-principal);
-    color: var(--cor-texto-radius);
+    background-color: var(--color-primary);
+    color: var(--color-text-radius);
   }
 
   &__padrao {
-    background-color: var(--cor-fundo);
-    color: var(--cor-principal);
-    border: 1px solid var(--cor-principal);
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
   }
 
   &--desabilitado {
@@ -61,33 +62,33 @@ button {
     cursor: default;
   }
 
-  &--pequeno {
-    height: var(--tamanho-radius-pequeno);
+  &--s {
+    height: var(--size-btn-s);
   }
 
   &__paginacao {
-    width: var(--tamanho-radius-paginacao);
-    height: var(--tamanho-radius-paginacao);
+    width: var(--size-btn-pagination);
+    height: var(--size-btn-pagination);
     padding: 0;
     border: 1px solid transparent;
-    background-color: var(--cor-fundo);
-    border-color: var(--cor-border);
+    background-color: var(--color-bg);
+    border-color: var(--color-border);
     margin-right: var(--espaco-minimo);
 
     p {
-      color: var(--cor-texto);
-      font-size: var(--fonte-tamanho-12);
+      color: var(--color-text);
+      font-size: var(--fonte-size-12);
     }
 
     &:hover {
-      background-color: var(--cor-hover);
-      border-color: var(--cor-hover);
+      background-color: var(--color-hover);
+      border-color: var(--color-hover);
     }
 
     &--selecionado {
-      background-color: var(--cor-principal);
+      background-color: var(--color-primary);
       p {
-        color: var(--cor-texto-selecionado);
+        color: var(--color-text-selected);
       }
     }
   }
@@ -101,7 +102,7 @@ button {
     justify-content: space-between;
     align-items: center;
     padding-right: var(--espaco-minimo);
-    background-color: var(--cor-elemento);
+    background-color: var(--color-element);
     border-radius: var(--border-radius);
   }
 }

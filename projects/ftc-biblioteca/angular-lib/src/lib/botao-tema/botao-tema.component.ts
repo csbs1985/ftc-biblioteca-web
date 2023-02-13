@@ -6,15 +6,15 @@ import { TemaService } from 'projects/ftc-biblioteca/angular-lib/src/services/te
   templateUrl: './botao-tema.component.html',
 })
 export class BotaoTemaComponent implements OnInit {
-  public icone: string;
+  public icon: string;
 
   constructor(private temaService: TemaService) {
-    this.icone = this.temaService.pegarTema();
+    this.icon = this.temaService.pegarTema();
   }
 
   ngOnInit(): void {}
 
   public trocarTema(): string {
-    return (this.icone = this.temaService.trocarTema());
+    return (this.icon = this.temaService.trocarTema());
   }
 }

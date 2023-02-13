@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: var(--tamanho-menu-horizontal);
+  height: var(--size-menu-horizontal);
   border-bottom: var(--border);
   padding-left: var(--espaco-medio);
   // background-color: greenyellow;
@@ -13,7 +13,7 @@
 
   &__botao {
     cursor: pointer;
-    height: var(--tamanho-menu-horizontal);
+    height: var(--size-menu-horizontal);
     align-items: center;
     background-color: transparent;
     border: none;
@@ -21,8 +21,8 @@
     padding: 0 var(--espaco-medio);
 
     &--selecionado {
-      color: var(--cor-principal);
-      border-bottom-color: var(--cor-principal);
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
     }
   }
 }

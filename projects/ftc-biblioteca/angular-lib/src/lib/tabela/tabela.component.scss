@@ -5,7 +5,7 @@
 
   tr {
     &:first-of-type {
-      background-color: var(--cor-elemento);
+      background-color: var(--color-element);
 
       th {
         &:first-of-type {
@@ -20,22 +20,22 @@
 
     th,
     td {
-      padding: 0 var(--espaco-pequeno);
+      padding: 0 var(--espaco-s);
       text-align: left;
       vertical-align: middle;
-      font-size: var(--fonte-tamanho-14);
+      font-size: var(--fonte-size-14);
       text-transform: lowercase;
-      height: var(--tamanho-tabela-linha);
+      height: var(--size-table-line);
     }
   }
 
   &__conteudo {
     &:hover {
       cursor: pointer;
-      background-color: var(--cor-hover);
+      background-color: var(--color-hover);
 
       td {
-        color: var(--cor-texto-hover);
+        color: var(--color-text-hover);
       }
     }
 
@@ -44,19 +44,19 @@
     }
 
     &--selecionado {
-      background-color: var(--cor-principal);
+      background-color: var(--color-primary);
 
       td {
-        color: var(--cor-texto-selecionado);
+        color: var(--color-text-selected);
       }
     }
   }
 
   &__rodape {
-    height: var(--tamanho-tabela-linha);
-    background-color: var(--cor-elemento);
+    height: var(--size-table-line);
+    background-color: var(--color-element);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
-    padding: 0 var(--espaco-pequeno);
+    padding: 0 var(--espaco-s);
     display: flex;
     align-items: center;
     justify-content: space-between;

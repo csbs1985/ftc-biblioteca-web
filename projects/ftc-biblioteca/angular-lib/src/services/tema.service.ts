@@ -5,7 +5,7 @@ import { TemaEnum } from '../enums/tema.enum';
   providedIn: 'root',
 })
 export class TemaService {
-  public icone: string = TemaEnum.ESCURO;
+  public icon: string = TemaEnum.ESCURO;
 
   constructor() {}
 
@@ -14,9 +14,7 @@ export class TemaService {
 
     localStorage.setItem('tema_escuro', tema.toString());
 
-    return tema
-      ? (this.icone = TemaEnum.CLARO)
-      : (this.icone = TemaEnum.ESCURO);
+    return tema ? (this.icon = TemaEnum.CLARO) : (this.icon = TemaEnum.ESCURO);
   }
 
   public pegarTema(): string {
@@ -24,10 +22,10 @@ export class TemaService {
 
     if (temaEscuro === 'true') {
       document.body.classList.add('tema-escuro');
-      return (this.icone = TemaEnum.CLARO);
+      return (this.icon = TemaEnum.CLARO);
     }
 
     document.body.classList.remove('tema-claro');
-    return (this.icone = TemaEnum.ESCURO);
+    return (this.icon = TemaEnum.ESCURO);
   }
 }

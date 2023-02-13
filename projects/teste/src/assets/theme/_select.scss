@@ -5,30 +5,30 @@
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    background-color: var(--cor-elemento);
-    height: var(--tamanho-input);
+    background-color: var(--color-element);
+    height: var(--size-input);
     border-radius: var(--border-radius);
     padding: var(--espaco-minimo);
-    gap: var(--espaco-pequeno);
+    gap: var(--espaco-s);
   }
 
   &__botao {
     display: flex;
     align-items: center;
-    height: var(--tamanho-radius-pequeno);
+    height: var(--size-btn-s);
     border-radius: var(--border-radius);
-    padding: 0 var(--espaco-pequeno);
+    padding: 0 var(--espaco-s);
     vertical-align: middle;
 
     &:hover {
       cursor: pointer;
-      background-color: var(--cor-hover);
-      color: var(--cor-texto-selecionado);
+      background-color: var(--color-hover);
+      color: var(--color-text-selected);
     }
 
     &--selecionado {
-      background-color: var(--cor-principal);
-      color: var(--cor-texto-selo);
+      background-color: var(--color-primary);
+      color: var(--color-text-selo);
     }
   }
 }

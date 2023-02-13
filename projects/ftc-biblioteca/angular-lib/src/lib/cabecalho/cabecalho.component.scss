@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: var(--tamanho-cabecalho);
+  height: var(--size-cabecalho);
   width: 100%;
   padding: 0 var(--espaco-medio);
-  background-color: var(--cor-fundo);
+  background-color: var(--color-bg);
   border-bottom: var(--border);
 
   &__menu {
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: var(--espaco-pequeno);
+    gap: var(--espaco-s);
   }
 }
 

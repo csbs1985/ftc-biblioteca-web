@@ -1,7 +1,7 @@
 .ftc-placa {
   width: 230px;
-  background-color: var(--cor-fundo);
-  border: 4px solid var(--cor-texto);
+  background-color: var(--color-bg);
+  border: 4px solid var(--color-text);
   border-radius: var(--border-radius);
 
   * {
@@ -14,9 +14,9 @@
     align-items: center;
     height: 24px;
     font-weight: lighter;
-    background-color: var(--cor-placa);
+    background-color: var(--color-placa);
     border-radius: 4px 4px 0 0;
-    color: var(--cor-texto-selo);
+    color: var(--color-text-selo);
   }
 
   &__valor {
@@ -24,23 +24,23 @@
     justify-content: center;
     align-items: center;
     height: 56px;
-    font-size: var(--fonte-tamanho-60);
+    font-size: var(--fonte-size-60);
   }
 
   &--selecionado {
-    border-color: var(--cor-principal);
+    border-color: var(--color-primary);
 
     .ftc-placa__valor {
-      color: var(--cor-principal);
+      color: var(--color-primary);
     }
   }
 
   &:hover {
     cursor: pointer;
-    border-color: var(--cor-hover);
+    border-color: var(--color-hover);
 
     .ftc-placa__valor {
-      color: var(--cor-hover);
+      color: var(--color-hover);
     }
   }
 }
