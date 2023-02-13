@@ -1,8 +1,8 @@
 <section class="ftc-paginacao">
   <button
     [disabled]="desabilitarPaginacaoAnterior"
-    class="botao botao__paginacao"
-    [class.botao--desabilitado]="desabilitarPaginacaoAnterior"
+    class="button botao__paginacao"
+    [class.button--desabilitado]="desabilitarPaginacaoAnterior"
     (click)="paginaAnterior()"
   >
     <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +17,7 @@
   </button>
 
   <button
-    class="botao botao__paginacao"
+    class="button botao__paginacao"
     [class.botao__paginacao--selecionado]="paginacaoInput.paginaAtual === 1"
     (click)="selecionarPagina(1)"
   >
@@ -29,7 +29,7 @@
   <div *ngFor="let item of paginacaoInput.proximasPaginas">
     <button
       *ngIf="mostrarPaginacaoAnteriorProxima(item)"
-      class="botao botao__paginacao"
+      class="button botao__paginacao"
       [class.botao__paginacao--selecionado]="
         item === paginacaoInput.paginaAtual
       "
@@ -42,7 +42,7 @@
   <p class="margin-right--minimo" *ngIf="mostrarPontosFinal">...</p>
 
   <button
-    class="botao botao__paginacao"
+    class="button botao__paginacao"
     [class.botao__paginacao--selecionado]="
       paginacaoInput.ultimaPagina === paginacaoInput.paginaAtual
     "
@@ -53,8 +53,8 @@
 
   <button
     [disabled]="desabilitarProximaPaginacao"
-    class="botao botao__paginacao"
-    [class.botao--desabilitado]="desabilitarProximaPaginacao"
+    class="button botao__paginacao"
+    [class.button--desabilitado]="desabilitarProximaPaginacao"
     (click)="proximaPagina()"
   >
     <svg width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">

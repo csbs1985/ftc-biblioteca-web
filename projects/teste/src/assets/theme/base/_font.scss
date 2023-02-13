@@ -1,0 +1,40 @@
+.font {
+  &-xxs {
+    font-size: var(--font-xxs);
+  }
+  &-xs {
+    font-size: var(--font-xs);
+  }
+  &-s {
+    font-size: var(--font-s);
+  }
+  &-m {
+    font-size: var(--font-m);
+  }
+  &-l {
+    font-size: var(--font-l);
+  }
+  &-xl {
+    font-size: var(--font-xl);
+  }
+  &-xxl {
+    font-size: var(--font-xxl);
+  }
+
+  &-ubuntu {
+    font-family: "ubuntu", "Helvetica Neue", sans-serif;
+  }
+  &-placa-mercosul {
+    font-family: "placa-mercosul", "Helvetica Neue", sans-serif;
+  }
+
+  &-bold {
+    font-weight: bold;
+  }
+  &-lighter {
+    font-weight: lighter;
+  }
+  &-regular {
+    font-weight: 600;
+  }
+}

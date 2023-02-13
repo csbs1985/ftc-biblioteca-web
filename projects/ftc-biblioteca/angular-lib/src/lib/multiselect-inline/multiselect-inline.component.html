@@ -1,12 +1,12 @@
 <section class="width-100">
-  <p class="texto__rotulo" *ngIf="rotulo">{{ rotulo }}</p>
+  <h5 *ngIf="rotulo">{{ rotulo }}</h5>
 
   <div class="select select__inline">
     <button
       *ngFor="let item of conteudo"
-      class="botao botao__elemento botao--pequeno"
-      [class.botao--selecionado]="item.selecionado"
-      [class.botao--desabilitado]="item.desabilitado"
+      class="button botao__elemento button--pequeno"
+      [class.button--selecionado]="item.selecionado"
+      [class.button--desabilitado]="item.desabilitado"
       [disabled]="item.desabilitado"
       (click)="selecionarItem(item)"
     >

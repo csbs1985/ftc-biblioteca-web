@@ -1,5 +1,5 @@
 <section class="width-100">
-  <p class="texto__rotulo" *ngIf="rotulo">{{ rotulo }}</p>
+  <h5 *ngIf="rotulo">{{ rotulo }}</h5>
 
   <div class="flex botao__borda-input">
     <input
@@ -11,7 +11,7 @@
     />
 
     <button
-      class="botao botao__principal botao--pequeno"
+      class="button botao__principal button--pequeno"
       (click)="inputBotaoSubmite(input.value)"
     >
       {{ botao }}

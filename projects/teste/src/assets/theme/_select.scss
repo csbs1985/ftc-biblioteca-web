@@ -7,7 +7,7 @@
     align-items: center;
     background-color: var(--cor-elemento);
     height: var(--tamanho-input);
-    border-radius: var(--borda-canto);
+    border-radius: var(--border-radius);
     padding: var(--espaco-minimo);
     gap: var(--espaco-pequeno);
   }
@@ -15,8 +15,8 @@
   &__botao {
     display: flex;
     align-items: center;
-    height: var(--tamanho-botao-pequeno);
-    border-radius: var(--borda-canto);
+    height: var(--tamanho-radius-pequeno);
+    border-radius: var(--border-radius);
     padding: 0 var(--espaco-pequeno);
     vertical-align: middle;
 

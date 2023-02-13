@@ -2,10 +2,10 @@
   width: 230px;
   background-color: var(--cor-fundo);
   border: 4px solid var(--cor-texto);
-  border-radius: var(--borda-canto);
+  border-radius: var(--border-radius);
 
   * {
-    font-family: "gl-nummernschild-eng", "Helvetica Neue", sans-serif;
+    font-family: "placa-mercosul", "Helvetica Neue", sans-serif;
   }
 
   &__azul {

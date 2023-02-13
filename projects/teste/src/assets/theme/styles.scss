@@ -1,11 +1,24 @@
-@import "./resete";
+// estrutura de pastas => https://willianjusten.com.br/organizando-seu-css-com-itcss
+// estrutura de classes => https://desenvolvimentoparaweb.com/css/bem/
+// reaproveitamento de classes => https://tailwindcss.com/
 
-@import "./fonte"; // não precisa importar
-@import "./borda";
-@import "./botao";
+// settings
+@import "./settings/reset";
+@import "./settings/color";
+@import "./settings/font";
+
+// tools
+@import "./tools/font";
+
+// base
+@import "./base/font";
+@import "./base/width";
+
+// components
+@import "./components/text";
+
 @import "./cartao";
 @import "./col";
-@import "./cor";
 @import "./espaco";
 @import "./flex";
 @import "./fundo";
@@ -14,5 +27,7 @@
 @import "./select";
 @import "./sombra";
 @import "./tamanho";
-@import "./texto";
-@import "./width";
+
+@import "./border";
+@import "./button";
+@import "./h";
