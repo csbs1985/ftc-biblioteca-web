@@ -8,6 +8,7 @@ import {
   TabelaInterface,
 } from 'projects/ftc-biblioteca/angular-lib/src/public-api';
 import { PlacaInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/placa.interface';
+import { SelectInlineEnum } from 'projects/ftc-biblioteca/angular-lib/src/enums/select-inline.enum';
 
 @Component({
   selector: 'app-root',
@@ -282,5 +283,9 @@ export class AppComponent {
 
   public get LogoEnum(): typeof LogoEnum {
     return LogoEnum;
+  }
+
+  public get SelectInlineEnum(): typeof SelectInlineEnum {
+    return SelectInlineEnum;
   }
 }

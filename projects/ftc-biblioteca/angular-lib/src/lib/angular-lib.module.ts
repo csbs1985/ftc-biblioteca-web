@@ -6,7 +6,6 @@ import { MenuComponent } from './menu/menu.component';
 import { LogoComponent } from './logo/logo.component';
 import { InputBotaoComponent } from './input-botao/input-botao.component';
 import { SelectInlineComponent } from './select-inline/select-inline.component';
-import { MultiselectInlineComponent } from './multiselect-inline/multiselect-inline.component';
 import { FormularioEntrarComponent } from './formulario-entrar/formulario-entrar.component';
 import { MenuTituloComponent } from './menu-titulo/menu-titulo.component';
 import { TabelaComponent } from './tabela/tabela.component';
@@ -24,7 +23,6 @@ import { SelectSubselectComponent } from './select-subselect/select-subselect.co
     MenuComponent,
     MenuTituloComponent,
     MostrandoItensComponent,
-    MultiselectInlineComponent,
     PaginacaoComponent,
     PlacaComponent,
     SelectInlineComponent,
@@ -40,7 +38,6 @@ import { SelectSubselectComponent } from './select-subselect/select-subselect.co
     MenuComponent,
     MenuTituloComponent,
     MostrandoItensComponent,
-    MultiselectInlineComponent,
     PaginacaoComponent,
     PlacaComponent,
     SelectInlineComponent,

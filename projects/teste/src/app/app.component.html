@@ -1,6 +1,14 @@
 <ftc-cabecalho></ftc-cabecalho>
 
 <div>
+  <ftc-select-inline
+    [tipo]="SelectInlineEnum.UNICA"
+    [rotulo]="'seleção unica'"
+    [conteudo]="conteudo"
+  ></ftc-select-inline>
+
+  <br />
+
   <ftc-placa
     [placaInput]="placa"
     (placaOutput)="placaOutput($event)"
@@ -14,10 +22,11 @@
     (menuTituloOutput)="menuTituloOutput($event)"
   ></ftc-menu-titulo>
 
-  <ftc-multiselect-inline
-    [rotulo]="'rotulo'"
+  <ftc-select-inline
+    [tipo]="SelectInlineEnum.MULTIPLA"
+    [rotulo]="'seleção multipla'"
     [conteudo]="conteudo"
-  ></ftc-multiselect-inline>
+  ></ftc-select-inline>
 
   <br />
 
