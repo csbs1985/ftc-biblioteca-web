@@ -16,6 +16,10 @@
     border-bottom: 2px solid transparent;
     padding: 0 var(--size-m);
 
+    &:hover {
+      color: var(--color-primary);
+    }
+
     &--select {
       color: var(--color-primary);
       border-bottom-color: var(--color-primary);

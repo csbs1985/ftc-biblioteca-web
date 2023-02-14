@@ -1,6 +1,18 @@
 <ftc-cabecalho></ftc-cabecalho>
 
 <div>
+  <ftc-input-periodo
+    [inputPeriodoInput]="inputPeriodo"
+    (inputPeriodoOutput)="inputPeriodoOutput($event)"
+  ></ftc-input-periodo>
+
+  <br />
+
+  <input type="date" name="" id="date" />
+
+  <br />
+  <br />
+
   <ftc-tabela
     [tabelaInput]="tabela"
     (tabelaOutput)="tabelaOutput($event)"
@@ -55,18 +67,28 @@
   <ftc-formulario-entrar></ftc-formulario-entrar>
 
   <button type="button" class="btn">botão</button>
+  <br />
   <button type="button" class="btn btn__primary">primary</button>
+  <br />
   <button type="button" class="btn btn__secondary">secondary</button>
+  <br />
   <button type="button" class="btn btn--disabled">disabled</button>
+  <br />
   <button type="button" class="btn btn__secondary btn--small">small</button>
+  <br />
   <button type="button" class="btn btn__secondary btn--small btn--full">
     full
   </button>
+  <br />
   <button type="button" class="btn btn__icon">
     <img src="/assets/icons/claro.svg" alt="" />
   </button>
+  <br />
   <button type="button" class="btn btn__icon btn__logout"></button>
+  <br />
   <button type="button" class="btn btn__icon btn__selo"></button>
+  <br />
   <button type="button" class="btn btn__text">elemento</button>
+  <br />
   <button type="button" class="btn btn--select">elemento</button>
 </div>

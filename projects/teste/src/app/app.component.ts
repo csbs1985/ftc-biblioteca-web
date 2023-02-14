@@ -5,6 +5,7 @@ import { SelectInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfa
 import { TemaService } from 'projects/ftc-biblioteca/angular-lib/src/services/tema.service';
 import {
   InputBotaoInterface,
+  PeriodoInterface,
   TabelaInterface,
 } from 'projects/ftc-biblioteca/angular-lib/src/public-api';
 import { PlacaInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/placa.interface';
@@ -16,6 +17,11 @@ import { SelectInlineEnum } from 'projects/ftc-biblioteca/angular-lib/src/enums/
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  public inputPeriodo: PeriodoInterface = {
+    inicio: '1985-10-31',
+    final: '2023-02-14',
+  };
+
   public inputBotao: InputBotaoInterface = {
     botaoTexto: 'texto do botão',
     placeholder: 'input com botão',
@@ -278,6 +284,10 @@ export class AppComponent {
   }
 
   public inputBotaoOutput(valor: any) {
+    console.log(valor);
+  }
+
+  public inputPeriodoOutput(valor: any) {
     console.log(valor);
   }
 

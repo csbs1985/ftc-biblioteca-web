@@ -6,6 +6,7 @@ export * from './interfaces/input-botao.interface';
 export * from './interfaces/select.interface';
 export * from './interfaces/paginacao.interface';
 export * from './interfaces/placa.interface';
+export * from './interfaces/periodo.interface';
 export * from './interfaces/tabela.interface';
 
 export * from './services/sair.service';
@@ -23,6 +24,7 @@ export * from './lib/angular-lib.module';
 export * from './lib/cabecalho/cabecalho.component';
 export * from './lib/formulario-entrar/formulario-entrar.component';
 export * from './lib/input-botao/input-botao.component';
+export * from './lib/input-periodo/input-periodo.component';
 export * from './lib/logo/logo.component';
 export * from './lib/menu/menu.component';
 export * from './lib/menu-titulo/menu-titulo.component';

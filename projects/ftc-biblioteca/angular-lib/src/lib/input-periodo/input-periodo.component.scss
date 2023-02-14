@@ -1,0 +1,15 @@
+.ftc-input-periodo {
+  &__calendario {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--color-element);
+    border-radius: var(--border-radius);
+  }
+
+  p {
+    font-size: var(--font-s);
+    padding: 0 var(--size-s);
+  }
+}

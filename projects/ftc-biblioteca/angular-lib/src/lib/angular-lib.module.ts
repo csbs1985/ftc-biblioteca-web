@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
@@ -13,12 +14,14 @@ import { PaginacaoComponent } from './paginacao/paginacao.component';
 import { MostrandoItensComponent } from './mostrando-itens/mostrando-itens.component';
 import { PlacaComponent } from './placa/placa.component';
 import { SelectSubselectComponent } from './select-subselect/select-subselect.component';
+import { InputPeriodoComponent } from './input-periodo/input-periodo.component';
 
 @NgModule({
   declarations: [
     CabecalhoComponent,
     FormularioEntrarComponent,
     InputBotaoComponent,
+    InputPeriodoComponent,
     LogoComponent,
     MenuComponent,
     MenuTituloComponent,
@@ -29,11 +32,12 @@ import { SelectSubselectComponent } from './select-subselect/select-subselect.co
     SelectSubselectComponent,
     TabelaComponent,
   ],
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule],
   exports: [
     CabecalhoComponent,
     FormularioEntrarComponent,
     InputBotaoComponent,
+    InputPeriodoComponent,
     LogoComponent,
     MenuComponent,
     MenuTituloComponent,

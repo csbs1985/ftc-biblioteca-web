@@ -1,0 +1,21 @@
+<section class="ftc-input-periodo">
+  <h5>selecionar periodo</h5>
+
+  <div class="ftc-input-periodo__calendario">
+    <input
+      #inicio
+      type="date"
+      [(ngModel)]="inputPeriodoInput.inicio"
+      name="inicio"
+      (input)="inputPeriodoInicio(inicio.value)"
+    />
+    <p>à</p>
+    <input
+      #final
+      type="date"
+      [(ngModel)]="inputPeriodoInput.final"
+      name="final"
+      (input)="inputPeriodoIFinal(final.value)"
+    />
+  </div>
+</section>

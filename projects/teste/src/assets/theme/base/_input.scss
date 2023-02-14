@@ -12,6 +12,10 @@ input {
   &--full {
     width: 100%;
   }
+
+  &[type="date"] {
+    font-family: "ubuntu", "Helvetica Neue", sans-serif;
+  }
 }
 
 .input {

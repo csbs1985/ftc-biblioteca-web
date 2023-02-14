@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularLibModule } from '@ftc-biblioteca/angular-lib';
@@ -13,6 +14,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     AngularLibModule,
     ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
