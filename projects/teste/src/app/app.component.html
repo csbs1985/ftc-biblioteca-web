@@ -1,7 +1,11 @@
 <ftc-cabecalho></ftc-cabecalho>
 
 <div>
-  <ftc-tabela [tabelaInput]="tabela"></ftc-tabela>
+  <ftc-tabela
+    [tabelaInput]="tabela"
+    (tabelaOutput)="tabelaOutput($event)"
+    (tabelaPaginacaoOutput)="tabelaPaginacaoOutput($event)"
+  ></ftc-tabela>
 
   <br />
 
