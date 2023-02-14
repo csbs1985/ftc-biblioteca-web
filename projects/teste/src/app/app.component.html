@@ -1,6 +1,13 @@
 <ftc-cabecalho></ftc-cabecalho>
 
 <div>
+  <ftc-select-subselect
+    [selectSubselectInput]="selectSubselect"
+    (selectSubselectOutput)="selectSubselectOutput($event)"
+  ></ftc-select-subselect>
+
+  <br />
+
   <ftc-select-inline
     [tipo]="SelectInlineEnum.UNICA"
     [rotulo]="'seleção unica'"

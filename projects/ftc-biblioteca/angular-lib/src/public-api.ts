@@ -14,6 +14,7 @@ export * from './services/tema.service';
 
 export * from './enums/aplicativo.enum';
 export * from './enums/grupo.enum';
+export * from './enums/select-inline.enum';
 export * from './enums/tema.enum';
 
 export * from './class/entrar.class';
