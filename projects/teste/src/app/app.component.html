@@ -1,6 +1,13 @@
 <ftc-cabecalho></ftc-cabecalho>
 
 <div>
+  <ftc-placa
+    [placaInput]="placa"
+    (placaOutput)="placaOutput($event)"
+  ></ftc-placa>
+
+  <br />
+
   <ftc-menu-titulo
     [titulo]="'politica de retenção'"
     [menu]="conteudo"
