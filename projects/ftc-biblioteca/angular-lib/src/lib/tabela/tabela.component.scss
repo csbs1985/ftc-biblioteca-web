@@ -30,6 +30,12 @@
   }
 
   &__conteudo {
+    border-bottom: var(--border);
+
+    &:last-of-type {
+      border: none;
+    }
+
     &:hover {
       cursor: pointer;
       background-color: var(--color-hover);
@@ -37,10 +43,6 @@
       td {
         color: var(--color-text-hover);
       }
-    }
-
-    td {
-      border-bottom: var(--border);
     }
 
     &--select {
