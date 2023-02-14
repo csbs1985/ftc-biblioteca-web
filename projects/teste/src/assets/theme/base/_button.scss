@@ -11,6 +11,7 @@
   color: var(--color-primary);
   background-repeat: no-repeat;
   background-position: center no-repeat;
+  white-space: nowrap;
 
   &:active {
     box-shadow: inset var(--box-shadow);
@@ -96,14 +97,5 @@
         color: var(--color-text-selected);
       }
     }
-  }
-
-  &__borda-input {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: var(--size-minimo);
-    background-color: var(--color-element);
-    border-radius: var(--border-radius);
   }
 }

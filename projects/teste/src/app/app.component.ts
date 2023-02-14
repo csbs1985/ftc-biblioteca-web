@@ -3,7 +3,10 @@ import { Component } from '@angular/core';
 import { LogoEnum } from 'projects/ftc-biblioteca/angular-lib/src/enums/logo.enum';
 import { SelectInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/select.interface';
 import { TemaService } from 'projects/ftc-biblioteca/angular-lib/src/services/tema.service';
-import { TabelaInterface } from 'projects/ftc-biblioteca/angular-lib/src/public-api';
+import {
+  InputBotaoInterface,
+  TabelaInterface,
+} from 'projects/ftc-biblioteca/angular-lib/src/public-api';
 import { PlacaInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/placa.interface';
 
 @Component({
@@ -12,6 +15,12 @@ import { PlacaInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfac
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  public inputBotao: InputBotaoInterface = {
+    botaoTexto: 'texto do botão',
+    placeholder: 'input com botão',
+    rotulo: 'inPUT com botÃO',
+  };
+
   public selectSubselect = [
     {
       select: 'concorrencia',
@@ -265,6 +274,10 @@ export class AppComponent {
 
   public selectSubselectOutput(select: any) {
     console.log(select);
+  }
+
+  public inputBotaoOutput(valor: any) {
+    console.log(valor);
   }
 
   public get LogoEnum(): typeof LogoEnum {

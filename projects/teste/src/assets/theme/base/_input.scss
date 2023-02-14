@@ -13,3 +13,14 @@ input {
     width: 100%;
   }
 }
+
+.input {
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: var(--size-xs);
+    background-color: var(--color-element);
+    border-radius: var(--border-radius);
+  }
+}

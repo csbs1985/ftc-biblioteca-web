@@ -1,8 +1,8 @@
-import { FormularioEntrarComponent } from './lib/formulario-entrar/formulario-entrar.component';
 /*
  * Public API Surface of angular-lib
  */
 
+export * from './interfaces/input-botao.interface';
 export * from './interfaces/select.interface';
 export * from './interfaces/paginacao.interface';
 export * from './interfaces/placa.interface';

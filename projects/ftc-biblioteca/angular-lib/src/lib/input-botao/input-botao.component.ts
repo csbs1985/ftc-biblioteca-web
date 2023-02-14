@@ -1,16 +1,14 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { InputBotaoInterface } from '../../interfaces/input-botao.interface';
 
 @Component({
   selector: 'ftc-input-botao',
   templateUrl: './input-botao.component.html',
 })
 export class InputBotaoComponent implements OnInit {
-  @Input() placeholder: string = '';
-  @Input() rotulo: string = '';
-  @Input() botao: string = '';
-  @Input() type = ['text', 'number', 'email'];
+  @Input() inputBotao!: InputBotaoInterface;
 
-  @Output() inputBotaoEmitter = new EventEmitter<string>();
+  @Output() inputBotaoOutput = new EventEmitter<string>();
 
   constructor() {}
 
@@ -21,6 +19,6 @@ export class InputBotaoComponent implements OnInit {
   }
 
   public inputBotaoSubmite(event: any): void {
-    this.inputBotaoEmitter.emit(event);
+    this.inputBotaoOutput.emit(event);
   }
 }

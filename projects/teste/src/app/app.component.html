@@ -1,6 +1,11 @@
 <ftc-cabecalho></ftc-cabecalho>
 
 <div>
+  <ftc-input-botao
+    [inputBotao]="inputBotao"
+    (inputBotaoOutput)="inputBotaoOutput($event)"
+  ></ftc-input-botao>
+
   <ftc-formulario-entrar></ftc-formulario-entrar>
 
   <button type="button" class="btn">botão</button>
