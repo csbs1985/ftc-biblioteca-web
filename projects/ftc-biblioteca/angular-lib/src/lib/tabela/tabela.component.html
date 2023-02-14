@@ -11,9 +11,7 @@
     <tr
       class="ftc-tabela__conteudo"
       *ngFor="let linha of tabelaInput.conteudo"
-      [class.ftc-tabela__conteudo--selecionado]="
-        tabelaItemSelecionado(linha.id)
-      "
+      [class.ftc-tabela__conteudo--select]="tabelaItemSelecionado(linha.id)"
       (click)="tabelaSelecionar(linha)"
     >
       <td *ngFor="let coluna of tabelaInput.titulo">

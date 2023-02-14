@@ -1,6 +1,10 @@
 <ftc-cabecalho></ftc-cabecalho>
 
 <div>
+  <ftc-tabela [tabelaInput]="tabela"></ftc-tabela>
+
+  <br />
+
   <ftc-select-subselect
     [selectSubselectInput]="selectSubselect"
     (selectSubselectOutput)="selectSubselectOutput($event)"

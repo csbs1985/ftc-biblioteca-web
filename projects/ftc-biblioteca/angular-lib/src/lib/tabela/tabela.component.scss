@@ -23,7 +23,7 @@
       padding: 0 var(--size-s);
       text-align: left;
       vertical-align: middle;
-      font-size: var(--fonte-size-14);
+      font-size: var(--font-s);
       text-transform: lowercase;
       height: var(--size-table-line);
     }
@@ -43,7 +43,7 @@
       border-bottom: var(--border);
     }
 
-    &--selecionado {
+    &--select {
       background-color: var(--color-primary);
 
       td {
