@@ -4,23 +4,19 @@
   align-items: center;
   height: var(--size-menu-horizontal);
   border-bottom: var(--border);
-  padding-left: var(--size-medio);
-  // background-color: greenyellow;
+  padding-left: var(--size-m);
+  margin-bottom: var(--size-xl);
 
-  p {
-    margin: 0;
-  }
-
-  &__botao {
+  &__btn {
     cursor: pointer;
     height: var(--size-menu-horizontal);
     align-items: center;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid transparent;
-    padding: 0 var(--size-medio);
+    padding: 0 var(--size-m);
 
-    &--selecionado {
+    &--select {
       color: var(--color-primary);
       border-bottom-color: var(--color-primary);
     }

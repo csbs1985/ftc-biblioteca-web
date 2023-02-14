@@ -1,6 +1,12 @@
 <ftc-cabecalho></ftc-cabecalho>
 
 <div>
+  <ftc-menu-titulo
+    [titulo]="'politica de retenção'"
+    [menu]="conteudo"
+    (menuTituloOutput)="menuTituloOutput($event)"
+  ></ftc-menu-titulo>
+
   <ftc-input-botao
     [inputBotao]="inputBotao"
     (inputBotaoOutput)="inputBotaoOutput($event)"
