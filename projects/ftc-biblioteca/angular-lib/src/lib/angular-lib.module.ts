@@ -1,9 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { MenuComponent } from './menu/menu.component';
 import { LogoComponent } from './logo/logo.component';
-import { CommonModule } from '@angular/common';
-import { InputComponent } from './input/input.component';
 import { InputBotaoComponent } from './input-botao/input-botao.component';
 import { SelectInlineComponent } from './select-inline/select-inline.component';
 import { MultiselectInlineComponent } from './multiselect-inline/multiselect-inline.component';
@@ -20,7 +20,6 @@ import { SelectSubselectComponent } from './select-subselect/select-subselect.co
     CabecalhoComponent,
     FormularioEntrarComponent,
     InputBotaoComponent,
-    InputComponent,
     LogoComponent,
     MenuComponent,
     MenuTituloComponent,
@@ -32,12 +31,11 @@ import { SelectSubselectComponent } from './select-subselect/select-subselect.co
     SelectSubselectComponent,
     TabelaComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   exports: [
     CabecalhoComponent,
     FormularioEntrarComponent,
     InputBotaoComponent,
-    InputComponent,
     LogoComponent,
     MenuComponent,
     MenuTituloComponent,

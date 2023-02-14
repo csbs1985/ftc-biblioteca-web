@@ -3,7 +3,7 @@ import { AplicativoEnum } from '../../enums/aplicativo.enum';
 import { LogoEnum } from '../../enums/logo.enum';
 import { TemaService } from '../../services/tema.service';
 import { GrupoEnum } from '../../enums/grupo.enum';
-import { SeloService } from '../../public-api';
+import { SairService, SeloService } from '../../public-api';
 
 @Component({
   selector: 'ftc-cabecalho',
@@ -18,6 +18,7 @@ export class CabecalhoComponent implements OnInit {
   public textoSelo!: string;
 
   constructor(
+    private sairService: SairService,
     private seloService: SeloService,
     private temaService: TemaService
   ) {
@@ -34,7 +35,7 @@ export class CabecalhoComponent implements OnInit {
   }
 
   public sair(): void {
-    console.log('sair'); // TODO: criar serviço
+    this.sairService.sair(); // TODO: criar serviço
   }
 
   public get LogoEnum(): typeof LogoEnum {

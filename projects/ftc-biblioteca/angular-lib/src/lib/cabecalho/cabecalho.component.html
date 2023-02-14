@@ -1,5 +1,5 @@
 <section class="ftc-cabecalho">
-  <ftc-logo [tipo]="LogoEnum.RETENCAO"></ftc-logo>
+  <ftc-logo [tipo]="LogoEnum.RETENCAO" title="logo retenção"></ftc-logo>
 
   <div class="ftc-cabecalho__menu">
     <div class="ftc-cabecalho__operador">
@@ -7,14 +7,18 @@
       <p>administrador</p>
     </div>
 
-    <button class="btn btn__icon">
+    <button class="btn btn__icon" title="selo">
       <img src="/assets/icons/selo-{{ selo }}.svg" alt="selo" />
     </button>
 
-    <button class="btn btn__icon" (click)="trocarTema()">
+    <button class="btn btn__icon" (click)="trocarTema()" title="alterar tema">
       <img src="/assets/icons/{{ iconTheme }}.svg" alt="botão tema" />
     </button>
 
-    <button class="btn btn__icon btn__logout" (click)="sair()"></button>
+    <button
+      class="btn btn__icon btn__logout"
+      (click)="sair()"
+      title="sair"
+    ></button>
   </div>
 </section>

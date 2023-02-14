@@ -1,24 +1,17 @@
-<form class="ftc-formulario-entrar" action="">
+<form
+  [formGroup]="formEntrar"
+  class="ftc-formulario-entrar"
+  (ngSubmit)="formularioEntrarClique()"
+>
   <ftc-logo [tipo]="LogoEnum.RETENCAO"></ftc-logo>
 
-  <ftc-input
-    class="input--cheio"
-    [placeholder]="'usuário'"
-    (inputEmitter)="inputEmitterUsuario($event)"
-  ></ftc-input>
+  <input type="text" formControlName="usuario" placeholder="usuário" />
 
-  <ftc-input
-    class="input--cheio"
-    [placeholder]="'senha'"
-    (inputEmitter)="inputEmitterSenha($event)"
-  ></ftc-input>
+  <input type="text" formControlName="senha" placeholder="senha" />
 
-  <button
-    class="button botao__primary button--cheio"
-    (click)="formularioEntrarCLique()"
-  >
-    entrar
+  <button class="btn btn__primary btn--full">entrar</button>
+
+  <button class="btn btn__text" (click)="formularioEntrarProblema()">
+    problema para entrar?
   </button>
-
-  <button class="button">problema para entrar?</button>
 </form>

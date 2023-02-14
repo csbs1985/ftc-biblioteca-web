@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LogoEnum } from '../../enums/logo.enum';
+import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { EntrarClass } from '../../class/entrar.class';
 
 @Component({
   selector: 'ftc-formulario-entrar',
@@ -7,21 +9,30 @@ import { LogoEnum } from '../../enums/logo.enum';
   styleUrls: ['./formulario-entrar.component.scss'],
 })
 export class FormularioEntrarComponent implements OnInit {
+  public formEntrar!: FormGroup;
   public logo!: LogoEnum;
 
-  constructor() {}
+  constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
-    this.identificarProjeto();
+    this.criarFormulario(new EntrarClass());
   }
 
-  private identificarProjeto() {}
+  private criarFormulario(usuario: EntrarClass): void {
+    this.formEntrar = this.formBuilder.group({
+      senha: [usuario.senha],
+      usuario: [usuario.usuario],
+    });
+  }
 
-  public formularioEntrarCLique() {}
+  public formularioEntrarClique(): void {
+    console.log(this.formEntrar.value); // TODO: criar função
+    this.criarFormulario(new EntrarClass());
+  }
 
-  public inputEmitterUsuario(valor: string): void {}
-
-  public inputEmitterSenha(valor: string): void {}
+  public formularioEntrarProblema(): void {
+    window.open('https://fleetcor.identitynow.com/ui/d/dashboard', '_blank');
+  }
 
   public get LogoEnum(): typeof LogoEnum {
     return LogoEnum;
