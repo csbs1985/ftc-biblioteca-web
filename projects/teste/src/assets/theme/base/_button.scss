@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-position: center no-repeat;
   white-space: nowrap;
+  text-transform: lowercase;
 
   &:active {
     box-shadow: inset var(--box-shadow);

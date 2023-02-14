@@ -219,37 +219,37 @@ export class AppComponent {
       selecionado: false,
       desabilitado: false,
     },
-    // {
-    //   valor: 'h4',
-    //   texto: '4 Horas',
-    //   selecionado: true,
-    //   desabilitado: false,
-    // },
-    // { valor: 'h1', texto: '1 Hora', selecionado: false, desabilitado: true },
-    // {
-    //   valor: 'm30',
-    //   texto: '30 Minutos',
-    //   selecionado: false,
-    //   desabilitado: false,
-    // },
-    // {
-    //   valor: 'm15',
-    //   texto: '15 Minutos',
-    //   selecionado: false,
-    //   desabilitado: false,
-    // },
-    // {
-    //   valor: 'm5',
-    //   texto: '5 Minutos',
-    //   selecionado: false,
-    //   desabilitado: false,
-    // },
-    // {
-    //   valor: 'm1',
-    //   texto: '1 Minuto',
-    //   selecionado: false,
-    //   desabilitado: false,
-    // },
+    {
+      valor: 'h4',
+      texto: '4 Horas',
+      selecionado: false,
+      desabilitado: false,
+    },
+    { valor: 'h1', texto: '1 Hora', selecionado: false, desabilitado: true },
+    {
+      valor: 'm30',
+      texto: '30 Minutos',
+      selecionado: false,
+      desabilitado: false,
+    },
+    {
+      valor: 'm15',
+      texto: '15 Minutos',
+      selecionado: false,
+      desabilitado: false,
+    },
+    {
+      valor: 'm5',
+      texto: '5 Minutos',
+      selecionado: false,
+      desabilitado: false,
+    },
+    {
+      valor: 'm1',
+      texto: '1 Minuto',
+      selecionado: false,
+      desabilitado: false,
+    },
   ];
 
   constructor(private temaService: TemaService) {

@@ -11,24 +11,4 @@
     padding: var(--size-xxs);
     gap: var(--size-s);
   }
-
-  &__botao {
-    display: flex;
-    align-items: center;
-    height: var(--size-btn-s);
-    border-radius: var(--border-radius);
-    padding: 0 var(--size-s);
-    vertical-align: middle;
-
-    &:hover {
-      cursor: pointer;
-      background-color: var(--color-hover);
-      color: var(--color-text-selected);
-    }
-
-    &--selecionado {
-      background-color: var(--color-primary);
-      color: var(--color-text-selo);
-    }
-  }
 }
