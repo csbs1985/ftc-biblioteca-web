@@ -1,21 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { GrupoEnum } from '../../enums/grupo.enum';
+import { Injectable } from '@angular/core';
+import { GrupoEnum } from '../public-api';
 
-@Component({
-  selector: 'ftc-botao-selo',
-  templateUrl: './botao-selo.component.html',
+@Injectable({
+  providedIn: 'root',
 })
-export class BotaoSeloComponent implements OnInit {
+export class SeloService {
   public selo: String = GrupoEnum.RETENCAO;
   public textoSelo!: string;
 
   constructor() {}
 
-  ngOnInit(): void {
-    this.pegarSelo();
-  }
-
-  private pegarSelo(): string {
+  public pegarSelo(): string {
     //TODO: criar função
     if (this.selo === GrupoEnum.B2B) return (this.textoSelo = '2B');
     if (this.selo === GrupoEnum.B2C) return (this.textoSelo = '2C');

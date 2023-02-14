@@ -2,15 +2,19 @@
   <ftc-logo [tipo]="LogoEnum.RETENCAO"></ftc-logo>
 
   <div class="ftc-cabecalho__menu">
-    <div class="ftc-operador">
-      <p class="texto--bold">olá, charles.atento</p>
-      <p class="texto">administrador</p>
+    <div class="ftc-cabecalho__operador">
+      <p class="font-bold">olá, charles.atento</p>
+      <p>administrador</p>
     </div>
 
-    <ftc-botao-selo></ftc-botao-selo>
+    <button class="btn btn__icon">
+      <img src="/assets/icons/selo-{{ selo }}.svg" alt="selo" />
+    </button>
 
-    <ftc-botao-tema></ftc-botao-tema>
+    <button class="btn btn__icon" (click)="trocarTema()">
+      <img src="/assets/icons/{{ iconTheme }}.svg" alt="botão tema" />
+    </button>
 
-    <ftc-botao-sair></ftc-botao-sair>
+    <button class="btn btn__icon btn__logout" (click)="sair()"></button>
   </div>
 </section>

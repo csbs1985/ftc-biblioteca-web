@@ -1,4 +1,4 @@
-button {
+.btn {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -6,66 +6,70 @@ button {
   border: none;
   border-radius: var(--border-radius);
   height: var(--size-btn);
-  font-size: var(--fonte-size-16);
-  padding: 0 var(--size-medio);
-  background-color: transparent;
+  font-size: var(--font-m);
+  padding: 0 var(--size-m);
   color: var(--color-primary);
-  text-transform: lowercase;
-}
-
-.button {
-  &:hover {
-    opacity: 0.9;
-  }
+  background-repeat: no-repeat;
+  background-position: center no-repeat;
 
   &:active {
     box-shadow: inset var(--box-shadow);
   }
 
-  &__icon {
-    width: var(--size-btn-icon);
-    height: var(--size-btn-icon);
-    background: var(--color-element) center no-repeat;
-  }
-
-  &__sair {
-    background: url("/assets/icons/sair.svg") var(--color-logout) center
-      no-repeat;
-  }
-
-  &__selo {
-    color: var(--color-text-selo);
-    font-size: var(--fonte-size-24);
-    font-weight: bold;
-    text-transform: capitalize;
-  }
-
-  &__elemento {
-    background-color: transparent;
+  &:hover {
+    opacity: 0.9;
   }
 
   &__primary,
-  &--selecionado {
+  &--select {
     background-color: var(--color-primary);
-    color: var(--color-text-radius);
+    color: var(--color-text-selected);
   }
 
-  &__padrao {
+  &__secondary {
     background-color: var(--color-bg);
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
   }
 
-  &--desabilitado {
-    background-color: transparent !important;
-    border-color: transparent !important;
-    cursor: default;
+  &__text {
+    background-color: transparent;
+
+    &:active {
+      box-shadow: none;
+      background: var(--color-element);
+    }
   }
 
-  &--s {
+  &__icon {
+    width: var(--size-btn-icon);
+    height: var(--size-btn-icon);
+    background: var(--color-element);
+  }
+
+  &__logout {
+    background: url("/assets/icons/sair.svg") var(--color-logout) center
+      no-repeat;
+  }
+
+  &--small {
     height: var(--size-btn-s);
   }
 
+  &--full {
+    width: 100%;
+  }
+
+  &--disabled {
+    background-color: var(--color-disabled);
+    border-color: transparent;
+    cursor: default;
+  }
+}
+
+//////////////
+
+.button {
   &__paginacao {
     width: var(--size-btn-pagination);
     height: var(--size-btn-pagination);
@@ -91,10 +95,6 @@ button {
         color: var(--color-text-selected);
       }
     }
-  }
-
-  &--cheio {
-    width: 100%;
   }
 
   &__borda-input {
