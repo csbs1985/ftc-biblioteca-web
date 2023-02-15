@@ -5,7 +5,7 @@
     <button
       *ngFor="let item of menu"
       class="ftc-menu-titulo__btn"
-      [class.ftc-menu-titulo__btn--select]="item.selecionado"
+      [class.ftc-menu-titulo__btn--selected]="item.selecionado"
       (click)="menuTituloSelecionar(item)"
     >
       {{ item.texto }}

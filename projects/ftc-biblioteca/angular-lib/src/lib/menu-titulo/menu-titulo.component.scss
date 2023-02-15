@@ -2,25 +2,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: var(--size-menu-horizontal);
+  height: var(--size-btn);
   border-bottom: var(--border);
   padding-left: var(--size-m);
   margin-bottom: var(--size-xl);
 
   &__btn {
     cursor: pointer;
-    height: var(--size-menu-horizontal);
-    align-items: center;
+    height: var(--size-btn);
     background-color: transparent;
     border: none;
     border-bottom: 2px solid transparent;
     padding: 0 var(--size-m);
 
-    &:hover {
-      color: var(--color-primary);
+    &:active {
+      animation: btn-animation 100ms;
     }
 
-    &--select {
+    &:hover {
+      color: var(--color-hover);
+      border-bottom-color: var(--color-hover);
+    }
+
+    &--selected {
       color: var(--color-primary);
       border-bottom-color: var(--color-primary);
     }
