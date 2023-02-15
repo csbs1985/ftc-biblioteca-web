@@ -7,7 +7,6 @@ import {
 @Component({
   selector: 'ftc-tabela',
   templateUrl: './tabela.component.html',
-  styleUrls: ['./tabela.component.scss'],
 })
 export class TabelaComponent implements OnInit {
   @Input() tabelaInput!: TabelaInterface;

@@ -1,0 +1,8 @@
+.selected {
+  background-color: var(--color-primary);
+  color: var(--color-text-selected);
+
+  * {
+    color: var(--color-text-selected) !important;
+  }
+}

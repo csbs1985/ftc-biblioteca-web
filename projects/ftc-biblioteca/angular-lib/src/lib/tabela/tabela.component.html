@@ -1,4 +1,4 @@
-<section class="ftc-tabela">
+<section>
   <h5 *ngIf="tabelaInput.rotulo">
     {{ tabelaInput.rotulo }}
   </h5>
@@ -9,9 +9,8 @@
     </tr>
 
     <tr
-      class="ftc-tabela__conteudo"
       *ngFor="let linha of tabelaInput.conteudo"
-      [class.ftc-tabela__conteudo--select]="tabelaItemSelecionado(linha.id)"
+      [class.selected]="tabelaItemSelecionado(linha.id)"
       (click)="tabelaSelecionar(linha)"
     >
       <td *ngFor="let coluna of tabelaInput.titulo">
@@ -20,15 +19,19 @@
     </tr>
   </table>
 
-  <div class="ftc-tabela__rodape">
-    <ftc-mostrando-itens
-      [mostrandoItensInput]="paginacao"
-      [itensSelecionadosInput]="this.selecionados.length"
-    ></ftc-mostrando-itens>
+  <table>
+    <tfoot>
+      <ftc-mostrando-itens
+        class="col-6"
+        [mostrandoItensInput]="paginacao"
+        [itensSelecionadosInput]="this.selecionados.length"
+      ></ftc-mostrando-itens>
 
-    <ftc-paginacao
-      [paginacaoInput]="paginacao"
-      (paginacaoOutput)="paginacaoOutput($event)"
-    ></ftc-paginacao>
-  </div>
+      <ftc-paginacao
+        class="col-6 text-right"
+        [paginacaoInput]="paginacao"
+        (paginacaoOutput)="paginacaoOutput($event)"
+      ></ftc-paginacao>
+    </tfoot>
+  </table>
 </section>

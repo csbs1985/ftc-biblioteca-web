@@ -4,7 +4,6 @@ import { PaginacaoInterface } from '../../public-api';
 @Component({
   selector: 'ftc-paginacao',
   templateUrl: './paginacao.component.html',
-  styleUrls: ['./paginacao.component.scss'],
 })
 export class PaginacaoComponent implements OnInit {
   @Input() paginacaoInput!: PaginacaoInterface;

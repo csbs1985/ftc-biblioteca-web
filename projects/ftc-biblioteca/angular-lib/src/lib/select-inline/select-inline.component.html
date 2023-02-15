@@ -6,7 +6,7 @@
       *ngFor="let item of conteudo"
       class="btn btn--small bg__element"
       [class.btn--select]="item.selecionado"
-      [class.btn--disabled]="item.desabilitado"
+      [class.disabled]="item.desabilitado"
       [disabled]="item.desabilitado"
       (click)="selecionarItem(item)"
     >

@@ -1,14 +1,18 @@
 .flex {
   display: flex;
 
-  &-grow {
-    flex-grow: 1;
+  &-align {
+    &-center {
+      align-items: center;
+    }
   }
 
-  &__between-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  &-inline {
+    display: inline-flex;
+  }
+
+  &-grow {
+    flex-grow: 1;
   }
 
   &-justify {
