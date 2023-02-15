@@ -10,6 +10,7 @@
 @import "./settings/box-shadow";
 
 // tools
+@import "./tools/col";
 @import "./tools/font";
 
 // base
@@ -27,5 +28,4 @@
 
 // components
 @import "./components/card";
-@import "./components/col";
 @import "./components/flex";
