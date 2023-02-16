@@ -1,0 +1,38 @@
+.ftc-menu {
+  width: 280px;
+
+  ul {
+    margin-bottom: var(--size-small);
+
+    li {
+      div {
+        ul {
+          margin-bottom: var(--size-l);
+
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: var(--size-s);
+            margin-bottom: var(--size-xs);
+
+            p {
+              cursor: pointer;
+              width: auto;
+              height: var(--size-line);
+              border-radius: var(--border-radius);
+              display: flex;
+              align-items: center;
+              padding: 0 var(--size-s);
+
+              &:hover {
+                background-color: var(--color-hover);
+                color: var(--color-text-hover);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

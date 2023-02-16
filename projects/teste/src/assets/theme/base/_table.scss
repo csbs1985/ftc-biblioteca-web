@@ -34,12 +34,12 @@ table {
       vertical-align: middle;
       font-size: var(--font-s);
       text-transform: lowercase;
-      height: var(--size-table-line);
+      height: var(--size-line);
     }
   }
 
   tfoot {
-    height: var(--size-table-line);
+    height: var(--size-line);
     background-color: var(--color-element);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     padding: 0 var(--size-s);

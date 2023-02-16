@@ -14,5 +14,6 @@ export class SairService {
 
   public limparlocalStorage() {
     localStorage.removeItem('tema_escuro');
+    localStorage.removeItem('menu_favoritos');
   }
 }

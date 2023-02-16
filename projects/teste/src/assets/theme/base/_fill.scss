@@ -1,0 +1,9 @@
+.fill {
+  &-default {
+    fill: var(--color-text);
+  }
+
+  &-current {
+    fill: var(--color-primary);
+  }
+}

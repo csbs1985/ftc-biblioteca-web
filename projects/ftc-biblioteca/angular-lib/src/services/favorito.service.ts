@@ -1,0 +1,54 @@
+import { Injectable } from '@angular/core';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { FavoritoInterface } from '../interfaces/favorito.interface';
+import { NotificacaoService } from './notificacao.service';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class FavoritoService {
+  private favoritosSubject: BehaviorSubject<FavoritoInterface[]> =
+    new BehaviorSubject<FavoritoInterface[]>([]);
+
+  public favoritos: Observable<FavoritoInterface[]> =
+    this.favoritosSubject.asObservable();
+
+  readonly limitFavorites: number = 5;
+
+  constructor(private notificacaoService: NotificacaoService) {}
+
+  public pegarTodosFavoritos(): Observable<FavoritoInterface[]> {
+    return JSON.parse(localStorage.getItem('menu_favoritos')!);
+  }
+
+  public vefificarFavorito(item: FavoritoInterface): boolean {
+    var favoritos = JSON.parse(localStorage.getItem('menu_favoritos')!) ?? [];
+
+    return favoritos.some(
+      (element: FavoritoInterface) => element.url === item.url
+    )
+      ? true
+      : false;
+  }
+
+  public toggleFavorito(item: FavoritoInterface) {
+    var favoritos = JSON.parse(localStorage.getItem('menu_favoritos')!) ?? [];
+    this.notificacaoService.isNotificacao = false;
+
+    if (
+      favoritos.some((element: FavoritoInterface) => element.url === item.url)
+    ) {
+      var index = favoritos.findIndex(
+        (value: FavoritoInterface) => value.url === item.url
+      );
+      favoritos.splice(index, 1);
+    } else {
+      favoritos.length >= this.limitFavorites
+        ? (this.notificacaoService.isNotificacao = true)
+        : favoritos.push(item);
+    }
+
+    this.favoritosSubject.next(favoritos);
+    localStorage.setItem('menu_favoritos', JSON.stringify(favoritos));
+  }
+}

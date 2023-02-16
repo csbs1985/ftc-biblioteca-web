@@ -19,6 +19,8 @@
 @import "./base/border";
 @import "./base/button";
 @import "./base/color";
+@import "./base/cursor";
+@import "./base/fill";
 @import "./base/font";
 @import "./base/h";
 @import "./base/input";
@@ -31,5 +33,6 @@
 // components
 @import "./components/card";
 @import "./components/disabled";
+@import "./components/ellipsis";
 @import "./components/flex";
 @import "./components/selected";

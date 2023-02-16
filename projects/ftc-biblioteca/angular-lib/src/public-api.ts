@@ -2,6 +2,7 @@
  * Public API Surface of angular-lib
  */
 
+export * from './interfaces/cliente.interface';
 export * from './interfaces/input-botao.interface';
 export * from './interfaces/select.interface';
 export * from './interfaces/paginacao.interface';
@@ -17,6 +18,7 @@ export * from './enums/aplicativo.enum';
 export * from './enums/grupo.enum';
 export * from './enums/select-inline.enum';
 export * from './enums/tema.enum';
+export * from './enums/tipo-cadastro.enum';
 
 export * from './class/entrar.class';
 

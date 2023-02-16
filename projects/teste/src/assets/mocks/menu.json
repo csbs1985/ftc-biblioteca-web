@@ -1,0 +1,547 @@
+{
+  "menu": [
+    {
+      "nome": "retenção",
+      "atendimentoAtivo": true,
+      "perfil": [
+        1,
+        2,
+        3
+      ],
+      "dispositivo": [
+        1,
+        2,
+        3
+      ],
+      "submenu": [
+        {
+          "nome": "atendimento",
+          "url": "/retencao/retencao-atendimento",
+          "perfil": [
+            1,
+            2
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "atendimento",
+      "atendimentoAtivo": true,
+      "perfil": [
+        1,
+        2,
+        3
+      ],
+      "dispositivo": [
+        1,
+        2,
+        3
+      ],
+      "submenu": [
+        {
+          "nome": "atendimento",
+          "url": "/atendimento/callcenter-atendimento",
+          "perfil": [
+            1,
+            2
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "emissão de nota fiscal eletrônica",
+          "url": "/atendimento/emissao-nota-fiscal-eletronica",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "exclusão do serasa",
+          "url": "/atendimento/exclusao-serasa",
+          "perfil": [
+            1,
+            2
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "histórico de atendimento",
+          "url": "/atendimento/historico-atendimento",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "histórico de inadimplência",
+          "url": "/atendimento/historico-inadimplencia",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "priorização",
+          "url": "/atendimento/priorizacao",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "reclamação, sugestão e elegios",
+          "url": "/atendimento/reclamacao-sugestao-elegios",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "sem parar não recebido",
+          "url": "/atendimento/sem-parar-nao-recebido",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "sem parar sem cliente",
+          "url": "/atendimento/sem-parar-sem-cliente",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "cliente",
+      "atendimentoAtivo": true,
+      "perfil": [
+        1,
+        2,
+        3
+      ],
+      "dispositivo": [
+        1,
+        2,
+        3
+      ],
+      "submenu": [
+        {
+          "nome": "bloqueio de correspond./cobrança",
+          "url": "/cliente/bloqueio-cobranca",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "cobrança externa judicial",
+          "url": "/cliente/cobranca-externa-judicial",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "consultar cliente",
+          "url": "/cliente/consultar-cliente",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "dados cadastrais",
+          "url": "/cliente/dados-cadastrais",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "situação do pedido",
+          "url": "/cliente/situacao-pedido",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "dispositivo",
+      "atendimentoAtivo": true,
+      "perfil": [
+        1,
+        2,
+        3
+      ],
+      "dispositivo": [
+        1,
+        2,
+        3
+      ],
+      "submenu": [
+        {
+          "nome": "dados dos veículos",
+          "url": "/dispositivo/dados-veiculos",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "dispositivo virtuais",
+          "url": "/dispositivo/dispositivo-virtuais",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "multa por evasão",
+          "url": "/dispositivo/multa-evasao",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "financeiro",
+      "atendimentoAtivo": true,
+      "perfil": [
+        1,
+        2,
+        3
+      ],
+      "dispositivo": [
+        1,
+        2,
+        3
+      ],
+      "submenu": [
+        {
+          "nome": "dados de cobrança",
+          "url": "/financeiro/dados-cobranca",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "movimentação de conta",
+          "url": "/financeiro/movimentacao-conta",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "faturas",
+          "url": "/financeiro/faturas",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "vale pedágio",
+      "atendimentoAtivo": true,
+      "perfil": [
+        1,
+        2,
+        3
+      ],
+      "dispositivo": [
+        1,
+        2,
+        3
+      ],
+      "submenu": [
+        {
+          "nome": "viagens",
+          "url": "/vale-pedagio/viagens",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "consulta e constetação",
+          "url": "/vale-pedagio/consulta-constetacao",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "configurações",
+      "atendimentoAtivo": false,
+      "perfil": [
+        1,
+        2,
+        3
+      ],
+      "dispositivo": [
+        1,
+        2,
+        3
+      ],
+      "submenu": [
+        {
+          "nome": "atualizações",
+          "url": "/configuracoes/atualizacoes",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "canais de atendimento",
+          "url": "/configuracoes/canais-atendimento",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "gestão de perfil",
+          "url": "/configuracoes/gestao-perfil",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "histórico de atendimento",
+          "url": "/configuracoes/historico-atendimento",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "histórico de permissões",
+          "url": "/configuracoes/historico-permissoes",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "manutenção de orientações",
+          "url": "/configuracoes/manutencao-orientacoes",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "manual de uso",
+          "url": "/configuracoes/manual-uso",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "nome": "versões",
+          "url": "/configuracoes/versoes",
+          "perfil": [
+            1,
+            2,
+            3
+          ],
+          "dispositivo": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}
