@@ -14,6 +14,7 @@
     border: none;
     border-bottom: 2px solid transparent;
     padding: 0 var(--size-m);
+    font-size: var(--font-m);
 
     &:active {
       animation: btn-animation 100ms;
