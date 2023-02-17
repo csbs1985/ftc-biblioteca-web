@@ -1,13 +1,17 @@
 .color {
-  &__b2b {
+  &-b2b {
     color: var(--color-b2b);
   }
 
-  &__b2c {
+  &-b2c {
     color: var(--color-b2c);
   }
 
-  &__retencao {
+  &-retencao {
     color: var(--color-retencao);
+  }
+
+  &-primary {
+    color: var(--color-primary);
   }
 }

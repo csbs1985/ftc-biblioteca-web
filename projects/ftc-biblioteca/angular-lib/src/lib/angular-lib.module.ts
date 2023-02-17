@@ -15,6 +15,8 @@ import { MostrandoItensComponent } from './mostrando-itens/mostrando-itens.compo
 import { PlacaComponent } from './placa/placa.component';
 import { SelectSubselectComponent } from './select-subselect/select-subselect.component';
 import { InputPeriodoComponent } from './input-periodo/input-periodo.component';
+import { MenuFavoritoComponent } from './menu-favorito/menu-favorito.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { InputPeriodoComponent } from './input-periodo/input-periodo.component';
     InputPeriodoComponent,
     LogoComponent,
     MenuComponent,
+    MenuFavoritoComponent,
     MenuTituloComponent,
     MostrandoItensComponent,
     PaginacaoComponent,
@@ -32,7 +35,7 @@ import { InputPeriodoComponent } from './input-periodo/input-periodo.component';
     SelectSubselectComponent,
     TabelaComponent,
   ],
-  imports: [CommonModule, ReactiveFormsModule, FormsModule],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule, RouterModule],
   exports: [
     CabecalhoComponent,
     FormularioEntrarComponent,
@@ -40,6 +43,7 @@ import { InputPeriodoComponent } from './input-periodo/input-periodo.component';
     InputPeriodoComponent,
     LogoComponent,
     MenuComponent,
+    MenuFavoritoComponent,
     MenuTituloComponent,
     MostrandoItensComponent,
     PaginacaoComponent,

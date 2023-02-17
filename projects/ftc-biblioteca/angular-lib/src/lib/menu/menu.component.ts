@@ -53,7 +53,7 @@ export class MenuComponent implements OnInit {
   }
 
   public verificarFavorito(item: SubmenuInterface): boolean {
-    return this.favoritoService.vefificarFavorito({
+    return this.favoritoService.verificarFavorito({
       nome: item.nome,
       url: item.url,
     })

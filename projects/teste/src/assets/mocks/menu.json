@@ -15,7 +15,7 @@
       ],
       "submenu": [
         {
-          "nome": "atendimento",
+          "nome": "atendimento retenção",
           "url": "/retencao/retencao-atendimento",
           "perfil": [
             1,
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "nome": "atendimento",
+      "nome": "callcenter",
       "atendimentoAtivo": true,
       "perfil": [
         1,
@@ -44,8 +44,8 @@
       ],
       "submenu": [
         {
-          "nome": "atendimento",
-          "url": "/atendimento/callcenter-atendimento",
+          "nome": "atendimento callcenter",
+          "url": "/callcenter/callcenter-atendimento",
           "perfil": [
             1,
             2
@@ -58,7 +58,7 @@
         },
         {
           "nome": "emissão de nota fiscal eletrônica",
-          "url": "/atendimento/emissao-nota-fiscal-eletronica",
+          "url": "/callcenter/emissao-nota-fiscal-eletronica",
           "perfil": [
             1,
             2,
@@ -72,7 +72,7 @@
         },
         {
           "nome": "exclusão do serasa",
-          "url": "/atendimento/exclusao-serasa",
+          "url": "/callcenter/exclusao-serasa",
           "perfil": [
             1,
             2
@@ -84,8 +84,8 @@
           ]
         },
         {
-          "nome": "histórico de atendimento",
-          "url": "/atendimento/historico-atendimento",
+          "nome": "histórico de callcenter",
+          "url": "/callcenter/historico-callcenter",
           "perfil": [
             1,
             2,
@@ -99,7 +99,7 @@
         },
         {
           "nome": "histórico de inadimplência",
-          "url": "/atendimento/historico-inadimplencia",
+          "url": "/callcenter/historico-inadimplencia",
           "perfil": [
             1,
             2,
@@ -113,7 +113,7 @@
         },
         {
           "nome": "priorização",
-          "url": "/atendimento/priorizacao",
+          "url": "/callcenter/priorizacao",
           "perfil": [
             1,
             2,
@@ -127,7 +127,7 @@
         },
         {
           "nome": "reclamação, sugestão e elegios",
-          "url": "/atendimento/reclamacao-sugestao-elegios",
+          "url": "/callcenter/reclamacao-sugestao-elegios",
           "perfil": [
             1,
             2,
@@ -141,7 +141,7 @@
         },
         {
           "nome": "sem parar não recebido",
-          "url": "/atendimento/sem-parar-nao-recebido",
+          "url": "/callcenter/sem-parar-nao-recebido",
           "perfil": [
             1,
             2,
@@ -155,7 +155,7 @@
         },
         {
           "nome": "sem parar sem cliente",
-          "url": "/atendimento/sem-parar-sem-cliente",
+          "url": "/callcenter/sem-parar-sem-cliente",
           "perfil": [
             1,
             2,
@@ -444,8 +444,8 @@
           ]
         },
         {
-          "nome": "canais de atendimento",
-          "url": "/configuracoes/canais-atendimento",
+          "nome": "canais de callcenter",
+          "url": "/configuracoes/canais-callcenter",
           "perfil": [
             1,
             2,
@@ -472,8 +472,8 @@
           ]
         },
         {
-          "nome": "histórico de atendimento",
-          "url": "/configuracoes/historico-atendimento",
+          "nome": "histórico de callcenter",
+          "url": "/configuracoes/historico-callcenter",
           "perfil": [
             1,
             2,

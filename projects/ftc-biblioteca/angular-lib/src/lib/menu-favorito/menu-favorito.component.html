@@ -1,0 +1,11 @@
+<ul *ngIf="favoritos" class="ftc-menu-favorito">
+  <li
+    *ngFor="let item of favoritos"
+    [routerLink]="[item.url]"
+    title="favorito: {{ item.nome }}"
+  >
+    <p class="font-s ellipsis">
+      {{ item.nome }}
+    </p>
+  </li>
+</ul>

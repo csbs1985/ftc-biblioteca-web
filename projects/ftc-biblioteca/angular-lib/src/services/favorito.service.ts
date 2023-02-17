@@ -13,15 +13,15 @@ export class FavoritoService {
   public favoritos: Observable<FavoritoInterface[]> =
     this.favoritosSubject.asObservable();
 
-  readonly limitFavorites: number = 5;
+  readonly limiteFavoritos: number = 10;
 
   constructor(private notificacaoService: NotificacaoService) {}
 
   public pegarTodosFavoritos(): Observable<FavoritoInterface[]> {
-    return JSON.parse(localStorage.getItem('menu_favoritos')!);
+    return JSON.parse(localStorage.getItem('menu_favoritos')!) ?? [];
   }
 
-  public vefificarFavorito(item: FavoritoInterface): boolean {
+  public verificarFavorito(item: FavoritoInterface): boolean {
     var favoritos = JSON.parse(localStorage.getItem('menu_favoritos')!) ?? [];
 
     return favoritos.some(
@@ -43,7 +43,7 @@ export class FavoritoService {
       );
       favoritos.splice(index, 1);
     } else {
-      favoritos.length >= this.limitFavorites
+      favoritos.length >= this.limiteFavoritos
         ? (this.notificacaoService.isNotificacao = true)
         : favoritos.push(item);
     }

@@ -29,6 +29,7 @@ export * from './lib/input-botao/input-botao.component';
 export * from './lib/input-periodo/input-periodo.component';
 export * from './lib/logo/logo.component';
 export * from './lib/menu/menu.component';
+export * from './lib/menu-favorito/menu-favorito.component';
 export * from './lib/menu-titulo/menu-titulo.component';
 export * from './lib/mostrando-itens/mostrando-itens.component';
 export * from './lib/paginacao/paginacao.component';

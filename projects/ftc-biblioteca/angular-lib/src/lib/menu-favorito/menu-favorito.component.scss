@@ -1,0 +1,27 @@
+.ftc-menu-favorito {
+  display: flex;
+  align-items: center;
+  gap: var(--size-s);
+
+  li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--size-s);
+    height: var(--size-btn-s);
+    padding: 0 var(--size-m);
+    border-radius: var(--border-circle);
+    border: var(--border);
+    background-color: var(--color-element);
+
+    &:active {
+      animation: btn-animation 100ms;
+    }
+
+    &:hover {
+      background-color: var(--color-hover);
+      border-color: var(--color-hover);
+      color: var(--color-text-hover) !important;
+    }
+  }
+}
