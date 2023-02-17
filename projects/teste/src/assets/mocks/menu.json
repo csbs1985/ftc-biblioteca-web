@@ -15,7 +15,7 @@
       ],
       "submenu": [
         {
-          "nome": "atendimento retenção",
+          "nome": "atendimento",
           "url": "/retencao/retencao-atendimento",
           "perfil": [
             1,
@@ -44,7 +44,7 @@
       ],
       "submenu": [
         {
-          "nome": "atendimento callcenter",
+          "nome": "atendimento",
           "url": "/callcenter/callcenter-atendimento",
           "perfil": [
             1,

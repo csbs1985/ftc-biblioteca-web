@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, BehaviorSubject, of } from 'rxjs';
 import { FavoritoInterface } from '../interfaces/favorito.interface';
 import { NotificacaoService } from './notificacao.service';
 
@@ -17,8 +17,8 @@ export class FavoritoService {
 
   constructor(private notificacaoService: NotificacaoService) {}
 
-  public pegarTodosFavoritos(): Observable<FavoritoInterface[]> {
-    return JSON.parse(localStorage.getItem('menu_favoritos')!) ?? [];
+  public pegarFavoritos(): Observable<FavoritoInterface[]> {
+    return of(JSON.parse(localStorage.getItem('menu_favoritos')!)) ?? [];
   }
 
   public verificarFavorito(item: FavoritoInterface): boolean {

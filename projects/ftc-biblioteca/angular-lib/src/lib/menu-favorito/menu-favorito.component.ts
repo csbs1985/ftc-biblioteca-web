@@ -8,7 +8,7 @@ import { FavoritoService } from '../../services/favorito.service';
   styleUrls: ['./menu-favorito.component.scss'],
 })
 export class MenuFavoritoComponent implements OnInit {
-  public favoritos: any = [];
+  public favoritos: FavoritoInterface[] = [];
 
   constructor(private favoritoService: FavoritoService) {}
 
@@ -17,7 +17,8 @@ export class MenuFavoritoComponent implements OnInit {
   }
 
   private pegarFavoritos(): void {
-    this.favoritos = this.favoritoService.pegarTodosFavoritos() ?? [];
-    console.log(this.favoritos);
+    this.favoritoService.pegarFavoritos().subscribe((favoritos) => {
+      this.favoritos = favoritos ?? [];
+    });
   }
 }
