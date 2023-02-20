@@ -48,6 +48,13 @@
       no-repeat;
   }
 
+  &__fechar {
+    width: var(--size-btn-fechar);
+    height: var(--size-btn-fechar);
+    padding: 0;
+    background: center no-repeat;
+  }
+
   &__nav {
     width: var(--size-btn-pagination);
     height: var(--size-btn-pagination);

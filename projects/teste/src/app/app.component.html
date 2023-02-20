@@ -1,6 +1,18 @@
 <ftc-cabecalho></ftc-cabecalho>
 
 <div>
+  <ftc-novidades
+    *ngIf="mostrarNovidades"
+    [novidadesInput]="novidades"
+    (novidadesOutput)="novidadesOutput($event)"
+  ></ftc-novidades>
+
+  <br />
+
+  <ftc-alerta [alertaInput]="alerta"></ftc-alerta>
+
+  <br />
+
   <ftc-menu-favorito></ftc-menu-favorito>
 
   <br />

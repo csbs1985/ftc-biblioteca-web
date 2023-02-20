@@ -1,0 +1,56 @@
+<section class="ftc-novidades card">
+  <h2>{{ novidadesInput.titulo }}</h2>
+  <p>
+    atualização de {{ novidadesInput.data }} [versão
+    {{ novidadesInput.versao }}]
+  </p>
+
+  <br />
+
+  <p>
+    Bem vindo à versão de {{ novidadesInput.data }} do
+    <span class="font-bold color-primary">{{ novidadesInput.projeto }}</span
+    >. Há muitas atualizações nesta versão que esperamos que você goste, alguns
+    dos principais destaques incluem:
+  </p>
+
+  <br />
+
+  <ul>
+    <li *ngFor="let item of novidadesInput.itens">
+      &bull; <span class="font-bold color-primary">{{ item.categoria }}</span> -
+      {{ item.texto }}
+    </li>
+  </ul>
+
+  <br />
+
+  <div>
+    <button class="btn btn__secondary" (click)="fecharNovidades()">
+      fechar
+    </button>
+
+    <button class="btn btn__primary" [routerLink]="'/configuracoes/versoes'">
+      ver mais
+    </button>
+  </div>
+
+  <button
+    class="btn btn__fechar"
+    title="fechar novidades"
+    (click)="fecharNovidades()"
+  >
+    <svg
+      _ngcontent-kdg-c21=""
+      xmlns="http://www.w3.org/2000/svg"
+      width="12.012"
+      height="12.01"
+    >
+      <path
+        _ngcontent-kdg-c21=""
+        d="m7.416 6.004 4.3-4.29a1.004 1.004 0 1 0-1.42-1.42l-4.29 4.3-4.29-4.3a1.004 1.004 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1.004 1.004 0 1 0 1.42 1.42l4.29-4.3 4.29 4.3a1.004 1.004 0 1 0 1.42-1.42Z"
+        fill="var(--color-text-selo)"
+      ></path>
+    </svg>
+  </button>
+</section>

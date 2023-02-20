@@ -1,0 +1,29 @@
+.ftc-alerta {
+  width: 100%;
+
+  li {
+    div {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--size-line);
+      padding: 0 var(--size-m);
+      background-color: var(--color-primary);
+      border-radius: var(--border-radius);
+
+      &:active {
+        animation: btn-animation 100ms;
+      }
+
+      &:hover {
+        background-color: var(--color-hover);
+        border-color: var(--color-hover);
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: var(--size-s);
+    }
+  }
+}

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { LogoEnum } from 'projects/ftc-biblioteca/angular-lib/src/enums/logo.enum';
 import { SelectInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/select.interface';
 import { TemaService } from 'projects/ftc-biblioteca/angular-lib/src/services/tema.service';
@@ -10,6 +9,8 @@ import {
 } from 'projects/ftc-biblioteca/angular-lib/src/public-api';
 import { PlacaInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/placa.interface';
 import { SelectInlineEnum } from 'projects/ftc-biblioteca/angular-lib/src/enums/select-inline.enum';
+import { AlertaInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/alerta.interface';
+import { NovidadesInterface } from 'projects/ftc-biblioteca/angular-lib/src/interfaces/novidades.interface';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,57 @@ import { SelectInlineEnum } from 'projects/ftc-biblioteca/angular-lib/src/enums/
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  public mostrarNovidades: boolean = true;
+  public novidades: NovidadesInterface = {
+    titulo: 'o que há de novo no Callcenter',
+    projeto: 'Callcenter',
+    data: 'fevereiro de 2023',
+    versao: '1.69',
+    itens: [
+      {
+        categoria: 'tema',
+        texto: 'escolha o tema entre claro e escuro e claro.',
+      },
+      {
+        categoria: 'cartão de crédito',
+        texto:
+          'adicione, remova e administre os cartões com esta nova função cartão de crédito.',
+      },
+      {
+        categoria: 'unificação',
+        texto: 'unificação da função dados cadastrais em menu e remoção.',
+      },
+      {
+        categoria: 'correções de bugs',
+        texto: 'vários bugs foram corrigidos.',
+      },
+    ],
+  };
+
+  public alerta: AlertaInterface[] = [
+    {
+      lido: false,
+      texto: 'protocolo do atendimento: 202208231640',
+      url: '/retencao/retencao-atendimento',
+    },
+    {
+      lido: false,
+      texto:
+        'reforçar caracteristicas do plano atual e beneficio do cashback + voucher',
+      url: '/retencao/retencao-atendimento',
+    },
+    {
+      lido: false,
+      texto: 'confirmar dados do cliente',
+      url: '/retencao/retencao-atendimento',
+    },
+    {
+      lido: false,
+      texto: 'oferta em todo lugar 2.0',
+      url: '/retencao/retencao-atendimento',
+    },
+  ];
+
   public inputPeriodo: PeriodoInterface = {
     inicio: '1985-10-31',
     final: '2023-02-14',
@@ -261,6 +313,10 @@ export class AppComponent {
 
   constructor(private temaService: TemaService) {
     this.temaService.pegarTema();
+  }
+
+  public novidadesOutput(output: boolean) {
+    this.mostrarNovidades = false;
   }
 
   public menuTituloOutput(event: SelectInterface) {

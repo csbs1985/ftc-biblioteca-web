@@ -17,9 +17,12 @@ import { SelectSubselectComponent } from './select-subselect/select-subselect.co
 import { InputPeriodoComponent } from './input-periodo/input-periodo.component';
 import { MenuFavoritoComponent } from './menu-favorito/menu-favorito.component';
 import { RouterModule } from '@angular/router';
+import { AlertaComponent } from './alerta/alerta.component';
+import { NovidadesComponent } from './novidades/novidades.component';
 
 @NgModule({
   declarations: [
+    AlertaComponent,
     CabecalhoComponent,
     FormularioEntrarComponent,
     InputBotaoComponent,
@@ -29,6 +32,7 @@ import { RouterModule } from '@angular/router';
     MenuFavoritoComponent,
     MenuTituloComponent,
     MostrandoItensComponent,
+    NovidadesComponent,
     PaginacaoComponent,
     PlacaComponent,
     SelectInlineComponent,
@@ -37,6 +41,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [CommonModule, ReactiveFormsModule, FormsModule, RouterModule],
   exports: [
+    AlertaComponent,
     CabecalhoComponent,
     FormularioEntrarComponent,
     InputBotaoComponent,
@@ -46,6 +51,7 @@ import { RouterModule } from '@angular/router';
     MenuFavoritoComponent,
     MenuTituloComponent,
     MostrandoItensComponent,
+    NovidadesComponent,
     PaginacaoComponent,
     PlacaComponent,
     SelectInlineComponent,
